@@ -1,0 +1,3037 @@
+[
+  {
+    "request_id": "PA-2605-02237",
+    "client_id": "OSTR",
+    "service_code": "BHA-HH-0550",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-116 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-116 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Patient is homebound (leaves home only with considerable effort)",
+        "status": "MET",
+        "clinical_evidence": "Leaves home only for medical visits with assistance of walker and caregiver; considerable effort."
+      },
+      {
+        "criterion": "Requires intermittent skilled nursing or therapy",
+        "status": "MET",
+        "clinical_evidence": "Needs skilled nursing for wound care and IV antibiotic teaching."
+      },
+      {
+        "criterion": "Under physician plan of care",
+        "status": "MET",
+        "clinical_evidence": "Plan of care signed by Dr. Osei."
+      }
+    ],
+    "rationale": "The patient meets all criteria for home health services as they are homebound, require skilled nursing for wound care and IV antibiotic teaching, and have a signed plan of care from their physician. Therefore, the request for home health services is approved."
+  },
+  {
+    "request_id": "PA-2605-01306",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2605-01513",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: basal-bolus insulin, glargine plus lispro with each meal"
+      },
+      {
+        "criterion": "Documented problematic hypoglycemia",
+        "status": "MET",
+        "clinical_evidence": "Two ER visits in past 6 months for severe hypoglycemia requiring glucagon"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is on a basal-bolus insulin regimen, which meets the criteria for insulin treatment. Additionally, the patient has documented instances of severe hypoglycemia requiring glucagon, fulfilling the requirement for problematic hypoglycemia. Therefore, the request for a Continuous Glucose Monitor (CGM) is medically necessary and should be approved."
+  },
+  {
+    "request_id": "PA-2607-00693",
+    "client_id": "KESTREL",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 8 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2602-01078",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 4 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 4 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2608-00953",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-JUNIPER Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 24 visits per plan year)",
+    "copilot_governing_source": "SPD-JUNIPER Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 24 visits per plan year)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Physical therapy request (16 visits used + 12 requested = 28) exceeds the annual benefit limit of 24 visits under SPD-JUNIPER Section 4.2."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Physical therapy request (16 visits used + 12 requested = 28) exceeds the annual benefit limit of 24 visits under SPD-JUNIPER Section 4.2."
+  },
+  {
+    "request_id": "PA-2603-01214",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DX-9581",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Inconclusive home sleep test (HSAT)",
+        "status": "MET",
+        "clinical_evidence": "HSAT performed; AHI 4.1 with low recording time, inconclusive."
+      },
+      {
+        "criterion": "suspected non-OSA sleep disorder (narcolepsy)",
+        "status": "MET",
+        "clinical_evidence": "Also reports cataplexy with laughter and sleep paralysis; narcolepsy suspected."
+      }
+    ],
+    "rationale": "The patient has an inconclusive home sleep test with an AHI of 4.1 and low recording time, which meets the criteria for an attended in-laboratory polysomnography. Additionally, the presence of symptoms consistent with narcolepsy further supports the medical necessity for this service."
+  },
+  {
+    "request_id": "PA-2601-00795",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "MET",
+        "clinical_evidence": "BMI 42.5. Comorbidities: dyslipidemia."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery",
+        "status": "MET",
+        "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      }
+    ],
+    "rationale": "The patient meets the criteria for bariatric surgery with a BMI of 42.5 and the presence of dyslipidemia as a comorbidity. Additionally, the required pre-operative psychological evaluation has been completed and the patient has been cleared for surgery."
+  },
+  {
+    "request_id": "PA-2603-01689",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "MISSING_INFO_NOT_REQUESTED",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "PEND_FOR_INFO",
+    "copilot_decision": "PEND_FOR_INFO",
+    "decision_matched": true,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "MET",
+        "clinical_evidence": "BMI 44.9. Comorbidities: dyslipidemia."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery.",
+        "status": "MISSING_DOCUMENTATION",
+        "clinical_evidence": "Psych evaluation referral placed."
+      }
+    ],
+    "rationale": "The patient meets the BMI requirement for bariatric surgery with a BMI of 44.9 and has a comorbidity of dyslipidemia. However, the pre-operative psychological evaluation has not yet been completed, necessitating a request for additional information before a determination can be made."
+  },
+  {
+    "request_id": "PA-2607-00161",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 4 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 4 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2603-00346",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "MET",
+        "clinical_evidence": "BMI 44.1. Comorbidities: type 2 diabetes on metformin."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery",
+        "status": "MET",
+        "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      }
+    ],
+    "rationale": "The patient meets the criteria for bariatric surgery with a BMI of 44.1 and has a comorbidity of type 2 diabetes. Additionally, the required pre-operative psychological evaluation has been completed and the patient has been cleared for surgery."
+  },
+  {
+    "request_id": "PA-2607-01615",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 5 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2603-01651",
+    "client_id": "RB-MA",
+    "service_code": "BHA-VASC-3647",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-111 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-111 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Documented venous reflux >= 500 ms on duplex ultrasound",
+        "status": "MET",
+        "clinical_evidence": "Duplex: GSV reflux 700 ms."
+      },
+      {
+        "criterion": "Symptomatic impairment",
+        "status": "MET",
+        "clinical_evidence": "Aching and heaviness in right leg, ankle edema by evening."
+      },
+      {
+        "criterion": "Failure of >= 3 months trial of medical-grade compression stockings",
+        "status": "MET",
+        "clinical_evidence": "Compression stockings 20-30 mmHg x 4 months."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for endovenous ablation of varicose veins. There is documented venous reflux of 700 ms, symptomatic impairment with aching and edema, and a successful trial of compression stockings for 4 months. Therefore, the request is approved."
+  },
+  {
+    "request_id": "PA-2603-00200",
+    "client_id": "KESTREL",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": false,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "NOT_MET",
+        "clinical_evidence": "BMI 37.1. Comorbidities: dyslipidemia."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery.",
+        "status": "MET",
+        "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      }
+    ],
+    "rationale": "The patient has a BMI of 37.1, which does not meet the requirement of BMI >= 40 or BMI >= 35 with comorbidity for bariatric surgery. Although the psychological evaluation was completed and the patient was cleared for surgery, the primary criterion for medical necessity regarding BMI is not satisfied."
+  },
+  {
+    "request_id": "PA-2604-02141",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": false,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "SPD-BRIGHT Section 5.3 (Bariatric surgery covered only at designated Center of Excellence)",
+    "source_matched": false,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Bariatric surgery planned at 'Sample Facility', which is not a designated Center of Excellence (COE) under SPD-BRIGHT Section 5.3."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Bariatric surgery planned at 'Sample Facility', which is not a designated Center of Excellence (COE) under SPD-BRIGHT Section 5.3."
+  },
+  {
+    "request_id": "PA-2605-01263",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery exclusion)",
+    "copilot_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery excluded)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+  },
+  {
+    "request_id": "PA-2606-01471",
+    "client_id": "HARLAN",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 8 weeks of physical therapy and medication without adequate relief, satisfying the criteria for advanced imaging. Therefore, the request for an MRI of the lumbar spine is justified based on the persistent symptoms despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2604-02178",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 8 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2607-00534",
+    "client_id": "KESTREL",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2605-00253",
+    "client_id": "HARLAN",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has met both criteria for outpatient physical therapy beyond the initial 12 visits. The progress note is current and indicates measurable improvement in shoulder flexion and QuickDASH scores, with the stated goals not yet achieved."
+  },
+  {
+    "request_id": "PA-2607-01856",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery exclusion)",
+    "copilot_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery excluded)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+  },
+  {
+    "request_id": "PA-2604-01787",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2603-01373",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 4 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 4 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2606-02012",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 4 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 4 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2605-01730",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: basal-bolus insulin, glargine plus lispro with each meal"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is on a basal-bolus insulin regimen, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. Both criteria for diabetes and insulin treatment are satisfied, warranting approval for the requested CGM system and sensors."
+  },
+  {
+    "request_id": "PA-2607-01236",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin treatment, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2601-00860",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2608-00896",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-7519",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-115 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-115 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Symptomatic chest pain with intermediate pre-test probability of CAD",
+        "status": "NOT_MET",
+        "clinical_evidence": "Pre-test probability assessed as high."
+      },
+      {
+        "criterion": "non-diagnostic initial stress test or inability to exercise",
+        "status": "MISSING_DOCUMENTATION",
+        "clinical_evidence": "Requesting coronary CTA."
+      }
+    ],
+    "rationale": "The patient presents with exertional chest pressure and a high pre-test probability of CAD, which does not meet the requirement for intermediate pre-test probability. Additionally, there is no documentation of a non-diagnostic initial stress test or inability to exercise, which is necessary for approval."
+  },
+  {
+    "request_id": "PA-2604-00626",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of physical therapy and naproxen treatment without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative therapy."
+  },
+  {
+    "request_id": "PA-2602-01703",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 8 weeks of physical therapy and medication without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2606-02202",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has met both criteria for outpatient physical therapy beyond the initial 12 visits. The progress note is current and shows measurable improvement in shoulder flexion and QuickDASH scores, indicating that the therapy is not maintenance but rather aimed at achieving specific functional goals."
+  },
+  {
+    "request_id": "PA-2608-01145",
+    "client_id": "SORREL",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 8 weeks of physical therapy and medication without adequate relief. This meets the criteria for advanced imaging as the conservative therapy duration exceeds the required 4 weeks."
+  },
+  {
+    "request_id": "PA-2608-00589",
+    "client_id": "RB-MA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2606-02035",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 5 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2604-02156",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: basal-bolus insulin, glargine plus lispro with each meal"
+      },
+      {
+        "criterion": "Documented problematic hypoglycemia",
+        "status": "MET",
+        "clinical_evidence": "Two ER visits in past 6 months for severe hypoglycemia requiring glucagon"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is on a basal-bolus insulin regimen, fulfilling the requirement for insulin treatment. Additionally, the patient has documented instances of severe hypoglycemia, meeting the criteria for CGM coverage. Therefore, the request for a Continuous Glucose Monitor is approved."
+  },
+  {
+    "request_id": "PA-2604-02344",
+    "client_id": "SORREL",
+    "service_code": "BHA-SURG-2988",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "PEND_FOR_INFO",
+    "decision_matched": false,
+    "qa_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Mechanical symptoms (locking, catching)",
+        "status": "MET",
+        "clinical_evidence": "Reports intermittent locking and catching."
+      },
+      {
+        "criterion": "Meniscal tear on MRI",
+        "status": "MET",
+        "clinical_evidence": "MRI: complex tear posterior horn medial meniscus."
+      },
+      {
+        "criterion": "Failure of >= 6 weeks conservative therapy",
+        "status": "NOT_MET",
+        "clinical_evidence": "3 weeks PT, NSAIDs, one steroid injection."
+      },
+      {
+        "criterion": "Absence of advanced osteoarthritis (Kellgren-Lawrence grade 3 or 4)",
+        "status": "MET",
+        "clinical_evidence": "X-ray: Kellgren-Lawrence grade 2."
+      }
+    ],
+    "rationale": "The patient meets the criteria for mechanical symptoms and has a confirmed meniscal tear on MRI. However, the documentation indicates only 3 weeks of conservative therapy, which does not meet the required 6 weeks. Therefore, additional information regarding the duration of conservative treatment is needed before a decision can be made."
+  },
+  {
+    "request_id": "PA-2604-00486",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-2988",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Mechanical symptoms (locking, catching)",
+        "status": "NOT_MET",
+        "clinical_evidence": "No mechanical symptoms."
+      },
+      {
+        "criterion": "Meniscal tear on MRI",
+        "status": "NOT_MET",
+        "clinical_evidence": "MRI: no discrete meniscal tear."
+      },
+      {
+        "criterion": "Failure of >= 6 weeks conservative therapy",
+        "status": "MISSING_DOCUMENTATION",
+        "clinical_evidence": "Not provided."
+      },
+      {
+        "criterion": "Absence of advanced osteoarthritis (Kellgren-Lawrence grade 3 or 4)",
+        "status": "NOT_MET",
+        "clinical_evidence": "X-ray: Kellgren-Lawrence grade 3."
+      }
+    ],
+    "rationale": "The request for arthroscopic knee surgery does not meet the medical necessity criteria as there are no mechanical symptoms and the MRI shows no discrete meniscal tear. Additionally, the patient has Kellgren-Lawrence grade 3 osteoarthritis, which is considered advanced, thus failing to meet the criteria for surgery."
+  },
+  {
+    "request_id": "PA-2602-00222",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DX-9581",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Inconclusive home sleep test (HSAT)",
+        "status": "NOT_MET",
+        "clinical_evidence": "HSAT 3 weeks ago: AHI 22, moderate OSA."
+      },
+      {
+        "criterion": "suspected non-OSA sleep disorder (narcolepsy, parasomnia, central apnea)",
+        "status": "NOT_MET",
+        "clinical_evidence": "Loud snoring, witnessed apneas, Epworth 14."
+      }
+    ],
+    "rationale": "The patient has a documented home sleep test indicating moderate obstructive sleep apnea (OSA) with an AHI of 22, which does not meet the criteria for an inconclusive HSAT or a suspected non-OSA sleep disorder. Therefore, the request for attended in-laboratory polysomnography does not satisfy the medical necessity criteria outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2608-00402",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 4 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 4 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2608-00422",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "PEND_FOR_INFO",
+    "decision_matched": false,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Red flags (cauda equina, fever, progressive deficit)",
+        "status": "NOT_MET",
+        "clinical_evidence": "Patient presents with low back pain radiating down the left leg in an L5 distribution with positive straight-leg raise."
+      },
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "NOT_MET",
+        "clinical_evidence": "Has completed 3 weeks of PT and scheduled naproxen without adequate relief."
+      },
+      {
+        "criterion": "Pre-surgical planning",
+        "status": "NOT_MET",
+        "clinical_evidence": "Requesting MRI lumbar spine without contrast."
+      }
+    ],
+    "rationale": "The patient has only completed 3 weeks of conservative therapy, which does not meet the requirement of 4 weeks for radicular pain. Additionally, there are no red flags present, and the request does not indicate pre-surgical planning. Therefore, further information regarding the completion of conservative therapy is needed to make a determination."
+  },
+  {
+    "request_id": "PA-2603-01499",
+    "client_id": "OSTR",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM."
+  },
+  {
+    "request_id": "PA-2601-01823",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery exclusion)",
+    "copilot_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery excluded)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+  },
+  {
+    "request_id": "PA-2608-02167",
+    "client_id": "HARLAN",
+    "service_code": "BHA-DME-0601",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": false,
+    "qa_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "CPAP usage of >= 4 hours per night on at least 70% of nights during a consecutive 30-day period",
+        "status": "NOT_MET",
+        "clinical_evidence": "usage >= 4 hrs on 80% of nights"
+      }
+    ],
+    "rationale": "The patient has demonstrated CPAP usage of >= 4 hours on 80% of nights, which meets the requirement of at least 70% of nights. However, the documentation does not specify that this usage occurred within the first 90 days, which is a critical requirement for continued coverage. Therefore, the request is denied based on medical necessity criteria."
+  },
+  {
+    "request_id": "PA-2608-01554",
+    "client_id": "KESTREL",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "On insulin pump therapy (Omnipod)"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin pump therapy, which satisfies the criteria for coverage of Continuous Glucose Monitors (CGM). Both required criteria are met, justifying the approval of the requested service."
+  },
+  {
+    "request_id": "PA-2608-01687",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-SURG-2744",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-106 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-106 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radiographic OA KL grade 3 or 4",
+        "status": "MET",
+        "clinical_evidence": "Left knee OA, KL grade 4 on standing films."
+      },
+      {
+        "criterion": "Functional limitation interfering with ADL",
+        "status": "MET",
+        "clinical_evidence": "Unable to walk more than one block, difficulty with stairs and dressing."
+      },
+      {
+        "criterion": "Failure of >= 3 months conservative management",
+        "status": "MET",
+        "clinical_evidence": "Conservative mgmt x 6 months (PT, NSAIDs, injections)."
+      },
+      {
+        "criterion": "If BMI >= 40, documented pre-operative risk optimization discussion (weight, A1c, smoking)",
+        "status": "MET",
+        "clinical_evidence": "Pre-op optimization discussed with patient (weight, A1c, smoking) and documented; patient enrolled in pre-hab."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for total knee arthroplasty as outlined in the governing policy. They have KL grade 4 osteoarthritis, significant functional limitations, have undergone more than 3 months of conservative management, and have had a documented pre-operative risk optimization discussion due to their BMI of 43.0."
+  },
+  {
+    "request_id": "PA-2606-00564",
+    "client_id": "HARLAN",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of conservative therapy (physical therapy and naproxen) without adequate relief. This meets the criteria for advanced imaging as outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2606-01159",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-1582",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": false,
+    "qa_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Superior visual field loss of 30 degrees or more taped vs. untaped on formal Humphrey visual field testing",
+        "status": "NOT_MET",
+        "clinical_evidence": "Humphrey visual field: superior field loss 26 degrees taped vs untaped."
+      },
+      {
+        "criterion": "External photographs showing lid margin resting on or near pupil",
+        "status": "MET",
+        "clinical_evidence": "External photographs attached."
+      }
+    ],
+    "rationale": "The patient does not meet the visual field loss requirement of 30 degrees or more, as the documented superior field loss is only 26 degrees. Although external photographs are provided, the primary criterion for medical necessity regarding visual field loss is not satisfied."
+  },
+  {
+    "request_id": "PA-2608-02161",
+    "client_id": "HARLAN",
+    "service_code": "BHA-DX-9581",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Inconclusive home sleep test (HSAT)",
+        "status": "MET",
+        "clinical_evidence": "HSAT performed; AHI 4.1 with low recording time, inconclusive."
+      },
+      {
+        "criterion": "Suspected non-OSA sleep disorder",
+        "status": "NOT_MET",
+        "clinical_evidence": "Loud snoring, witnessed apneas, Epworth 14."
+      }
+    ],
+    "rationale": "The patient has an inconclusive home sleep test (HSAT) as indicated by the low recording time and AHI of 4.1. Although there are signs of potential obstructive sleep apnea (OSA), the criteria for an inconclusive HSAT are met, warranting approval for attended in-laboratory polysomnography."
+  },
+  {
+    "request_id": "PA-2607-00690",
+    "client_id": "RB-MA",
+    "service_code": "BHA-HH-0550",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-116 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-116 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Patient is homebound (leaves home only with considerable effort)",
+        "status": "MET",
+        "clinical_evidence": "Leaves home only for medical visits with assistance of walker and caregiver; considerable effort."
+      },
+      {
+        "criterion": "Requires intermittent skilled nursing or therapy",
+        "status": "MET",
+        "clinical_evidence": "Needs skilled nursing for wound care and IV antibiotic teaching."
+      },
+      {
+        "criterion": "Under physician plan of care",
+        "status": "MET",
+        "clinical_evidence": "Plan of care signed by Dr. Osei."
+      }
+    ],
+    "rationale": "The patient meets all criteria for home health services as they are homebound, require skilled nursing for wound care and IV antibiotic teaching, and have a signed plan of care from their physician. Therefore, the request for home health services is approved."
+  },
+  {
+    "request_id": "PA-2602-01733",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of physical therapy and naproxen treatment without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative management."
+  },
+  {
+    "request_id": "PA-2601-00384",
+    "client_id": "HARLAN",
+    "service_code": "BHA-VASC-3647",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-111 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-111 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Documented venous reflux >= 500 ms on duplex ultrasound",
+        "status": "MET",
+        "clinical_evidence": "Duplex: GSV reflux 700 ms."
+      },
+      {
+        "criterion": "Symptomatic impairment",
+        "status": "MET",
+        "clinical_evidence": "Aching and heaviness in right leg, ankle edema by evening."
+      },
+      {
+        "criterion": "Failure of >= 3 months trial of medical-grade compression stockings",
+        "status": "MET",
+        "clinical_evidence": "Compression stockings 20-30 mmHg x 4 months."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for endovenous ablation of varicose veins. There is documented venous reflux of 700 ms, symptomatic impairment with aching and edema, and a trial of medical-grade compression stockings for 4 months, which satisfies the requirement of 3 months. Therefore, the request is approved."
+  },
+  {
+    "request_id": "PA-2607-00211",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Red flags (cauda equina, fever, progressive deficit)",
+        "status": "NOT_MET",
+        "clinical_evidence": "Patient presents with low back pain radiating down the left leg in an L5 distribution."
+      },
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 4 weeks of PT and scheduled naproxen without adequate relief."
+      },
+      {
+        "criterion": "Pre-surgical planning",
+        "status": "NOT_MET",
+        "clinical_evidence": "Requesting MRI lumbar spine without contrast."
+      }
+    ],
+    "rationale": "The patient has experienced radicular pain for more than 4 weeks despite conservative therapy, which meets the criteria for advanced imaging. The documentation indicates that conservative measures have been ineffective, justifying the need for an MRI of the lumbar spine."
+  },
+  {
+    "request_id": "PA-2604-00190",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-2744",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-106 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-106 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radiographic OA KL grade 3 or 4",
+        "status": "MET",
+        "clinical_evidence": "Left knee OA, KL grade 4 on standing films."
+      },
+      {
+        "criterion": "Functional limitation interfering with ADL",
+        "status": "MET",
+        "clinical_evidence": "Unable to walk more than one block, difficulty with stairs and dressing."
+      },
+      {
+        "criterion": "Failure of >= 3 months conservative management",
+        "status": "MET",
+        "clinical_evidence": "Conservative mgmt x 6 months (PT, NSAIDs, injections)."
+      },
+      {
+        "criterion": "If BMI >= 40, documented pre-operative risk optimization discussion",
+        "status": "MET",
+        "clinical_evidence": "BMI 40.1. Pre-op optimization discussed with patient (weight, A1c, smoking) and documented."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for total knee arthroplasty as outlined in the governing policy. They have KL grade 4 osteoarthritis, significant functional limitations, have undergone more than 3 months of conservative management, and have documented pre-operative risk optimization discussions due to their BMI of 40.1."
+  },
+  {
+    "request_id": "PA-2601-00424",
+    "client_id": "RB-MA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2605-00670",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery exclusion)",
+    "copilot_governing_source": "SPD-HARLAN Section 6.4 (Bariatric surgery excluded)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan."
+  },
+  {
+    "request_id": "PA-2607-01036",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2606-02111",
+    "client_id": "RB-MA",
+    "service_code": "BHA-THER-1830",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-112 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-112 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Wagner grade 3 diabetic foot ulcer",
+        "status": "MET",
+        "clinical_evidence": "Diabetic foot ulcer L plantar, Wagner grade 3."
+      },
+      {
+        "criterion": "standard wound care failed for >= 30 days",
+        "status": "MET",
+        "clinical_evidence": "Standard wound care (offloading, debridement) x 45 days, minimal granulation."
+      }
+    ],
+    "rationale": "The patient has a Wagner grade 3 diabetic foot ulcer, which meets the criteria for HBOT. Additionally, the documentation indicates that standard wound care has been attempted for 45 days with minimal improvement, satisfying the requirement for treatment failure prior to HBOT."
+  },
+  {
+    "request_id": "PA-2608-00451",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-BRIGHT Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 20 visits per plan year)",
+    "copilot_governing_source": "SPD-BRIGHT Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 20 visits per plan year)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Physical therapy request (24 visits used + 6 requested = 30) exceeds the annual benefit limit of 20 visits under SPD-BRIGHT Section 4.2."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Physical therapy request (24 visits used + 6 requested = 30) exceeds the annual benefit limit of 20 visits under SPD-BRIGHT Section 4.2."
+  },
+  {
+    "request_id": "PA-2606-00615",
+    "client_id": "RB-MA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2601-00789",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin treatment, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2604-01378",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-7519",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-115 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-115 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Symptomatic chest pain with intermediate pre-test probability of CAD",
+        "status": "MET",
+        "clinical_evidence": "Exertional chest pressure x 2 months. Pre-test probability assessed as intermediate."
+      },
+      {
+        "criterion": "Non-diagnostic initial stress test or inability to exercise",
+        "status": "MISSING_DOCUMENTATION",
+        "clinical_evidence": "No information provided regarding initial stress test results or exercise capability."
+      }
+    ],
+    "rationale": "The patient has exertional chest pressure for 2 months and an intermediate pre-test probability of CAD, which meets the criteria for CCTA. However, documentation regarding a non-diagnostic initial stress test or inability to exercise is missing, which is necessary for full approval."
+  },
+  {
+    "request_id": "PA-2606-02339",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-DME-0601",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Objective device download showing CPAP usage of >= 4 hours per night on at least 70% of nights during a consecutive 30-day period",
+        "status": "MET",
+        "clinical_evidence": "usage >= 4 hrs on 72% of nights"
+      }
+    ],
+    "rationale": "The patient has met the criteria for continued CPAP coverage as the objective device download shows usage of 4 hours or more on 72% of nights over a consecutive 30-day period. This satisfies the requirements outlined in MP-118 v1 Section 3 for continued coverage."
+  },
+  {
+    "request_id": "PA-2601-00480",
+    "client_id": "HARLAN",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-HARLAN Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 30 visits per plan year)",
+    "copilot_governing_source": "SPD-HARLAN Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 30 visits per plan year)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Physical therapy request (24 visits used + 12 requested = 36) exceeds the annual benefit limit of 30 visits under SPD-HARLAN Section 4.2."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Physical therapy request (24 visits used + 12 requested = 36) exceeds the annual benefit limit of 30 visits under SPD-HARLAN Section 4.2."
+  },
+  {
+    "request_id": "PA-2605-02247",
+    "client_id": "HARLAN",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2603-00631",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-6350",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "APPROVE",
+    "decision_matched": false,
+    "qa_governing_source": "MP-110 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-110 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Intractable neuropathic spine/leg pain failing >= 6 months conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Failed back surgery syndrome with neuropathic leg pain x 8 months. Completed PT and injections without relief."
+      },
+      {
+        "criterion": "Pre-trial psychological evaluation cleared",
+        "status": "MET",
+        "clinical_evidence": "Psych eval: cleared for SCS."
+      }
+    ],
+    "rationale": "The patient has documented intractable neuropathic leg pain for 8 months, having completed physical therapy and injections without relief, thus meeting the conservative therapy requirement. Additionally, the psychological evaluation has been completed and cleared, fulfilling all necessary criteria for the spinal cord stimulator trial."
+  },
+  {
+    "request_id": "PA-2608-00242",
+    "client_id": "HARLAN",
+    "service_code": "BHA-DX-9581",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Inconclusive home sleep test (HSAT)",
+        "status": "MET",
+        "clinical_evidence": "HSAT attempted twice; oximeter probe dislodged, technically inadequate."
+      }
+    ],
+    "rationale": "The patient has documented attempts at home sleep testing that were technically inadequate, which satisfies the requirement for an inconclusive HSAT. Additionally, the presence of loud snoring and witnessed apneas supports the need for attended in-laboratory polysomnography."
+  },
+  {
+    "request_id": "PA-2602-00829",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2601-01911",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-1582",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Superior visual field loss of 30 degrees or more taped vs. untaped on formal Humphrey visual field testing",
+        "status": "MET",
+        "clinical_evidence": "Humphrey visual field: superior field loss 32 degrees taped vs untaped."
+      },
+      {
+        "criterion": "External photographs showing lid margin resting on or near pupil",
+        "status": "MET",
+        "clinical_evidence": "External photographs attached."
+      }
+    ],
+    "rationale": "The patient meets the criteria for upper blepharoplasty as they have a superior visual field loss of 32 degrees, which exceeds the required 30 degrees. Additionally, external photographs have been provided, confirming the lid margin's position. Therefore, the request for bilateral upper blepharoplasty is approved."
+  },
+  {
+    "request_id": "PA-2604-02053",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of physical therapy and medication without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2601-01113",
+    "client_id": "RB-MA",
+    "service_code": "BHA-RAD-5205",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-113 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-113 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Indication for proton beam radiation therapy for pediatric tumors, skull-base chordomas, ocular melanoma, or central nervous system malignancies",
+        "status": "NOT_MET",
+        "clinical_evidence": "Left breast IDC, post-lumpectomy. Requesting proton beam therapy."
+      }
+    ],
+    "rationale": "The request for proton beam radiation therapy does not meet the governing criteria as the indication provided is for left breast invasive ductal carcinoma (IDC), which is not listed among the approved conditions for this therapy. The criteria specifically require conditions such as pediatric tumors, skull-base chordomas, ocular melanoma, or central nervous system malignancies."
+  },
+  {
+    "request_id": "PA-2601-00288",
+    "client_id": "HARLAN",
+    "service_code": "BHA-RAD-5205",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-113 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-113 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Pediatric tumors",
+        "status": "MET",
+        "clinical_evidence": "16 y/o with medulloblastoma, post-resection."
+      }
+    ],
+    "rationale": "The patient is a 16-year-old with medulloblastoma, which qualifies as a pediatric tumor. The request for proton beam radiation therapy is appropriate as it aligns with the governing criteria for pediatric tumors where photon radiation may pose unacceptable risks."
+  },
+  {
+    "request_id": "PA-2605-00557",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has low back pain radiating down the left leg, indicative of radicular pain, and has undergone 5 weeks of conservative therapy (physical therapy and naproxen) without adequate relief. This meets the criteria for advanced imaging as outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2604-00678",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-SURG-3052",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Continuous symptomatic nasal airway obstruction refractory to at least 4 weeks of medical therapy (intranasal steroids)",
+        "status": "MET",
+        "clinical_evidence": "Fluticasone and cetirizine x 6 weeks without improvement."
+      },
+      {
+        "criterion": "Physical exam showing severe septal deviation",
+        "status": "MET",
+        "clinical_evidence": "leftward septal deviation obstructing right airway."
+      }
+    ],
+    "rationale": "The patient has documented chronic nasal obstruction that has not improved after 6 weeks of medical therapy with intranasal steroids and antihistamines. Additionally, the physical examination confirms severe septal deviation obstructing the airway, meeting the criteria for septoplasty."
+  },
+  {
+    "request_id": "PA-2601-00793",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-2988",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Mechanical symptoms (locking, catching)",
+        "status": "NOT_MET",
+        "clinical_evidence": "No mechanical symptoms."
+      },
+      {
+        "criterion": "Meniscal tear on MRI",
+        "status": "NOT_MET",
+        "clinical_evidence": "MRI: no discrete meniscal tear."
+      },
+      {
+        "criterion": "Failure of >= 6 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "8 weeks PT, NSAIDs, one steroid injection."
+      },
+      {
+        "criterion": "Absence of advanced osteoarthritis (Kellgren-Lawrence grade 3 or 4)",
+        "status": "NOT_MET",
+        "clinical_evidence": "X-ray: Kellgren-Lawrence grade 3."
+      }
+    ],
+    "rationale": "The patient does not meet the criteria for arthroscopic knee surgery as there are no mechanical symptoms and the MRI did not show a discrete meniscal tear. Additionally, the presence of Kellgren-Lawrence grade 3 osteoarthritis further disqualifies the request based on the governing criteria."
+  },
+  {
+    "request_id": "PA-2604-01577",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DX-9581",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Inconclusive home sleep test (HSAT)",
+        "status": "MET",
+        "clinical_evidence": "HSAT performed; AHI 4.1 with low recording time, inconclusive."
+      },
+      {
+        "criterion": "Suspected non-OSA sleep disorder",
+        "status": "NOT_MET",
+        "clinical_evidence": "Loud snoring, witnessed apneas, Epworth 14."
+      }
+    ],
+    "rationale": "The patient has an inconclusive home sleep test (HSAT) as indicated by the low recording time and AHI of 4.1. Although there are signs of potential obstructive sleep apnea (OSA) with loud snoring and witnessed apneas, the criteria for an inconclusive HSAT is met, justifying the request for attended in-laboratory polysomnography."
+  },
+  {
+    "request_id": "PA-2604-00209",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-1582",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": false,
+    "qa_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Superior visual field loss of 30 degrees or more taped vs. untaped on formal Humphrey visual field testing",
+        "status": "NOT_MET",
+        "clinical_evidence": "Humphrey visual field: superior field loss 26 degrees taped vs untaped."
+      },
+      {
+        "criterion": "External photographs showing lid margin resting on or near pupil",
+        "status": "MET",
+        "clinical_evidence": "External photographs attached."
+      }
+    ],
+    "rationale": "The patient does not meet the visual field loss requirement of 30 degrees or more, as the documented superior field loss is only 26 degrees. Although external photographs are provided, the primary criterion for medical necessity regarding visual field loss is not satisfied."
+  },
+  {
+    "request_id": "PA-2603-01720",
+    "client_id": "KESTREL",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a Continuous Glucose Monitor (CGM). Both required criteria are satisfied, warranting approval for the requested CGM system and sensors."
+  },
+  {
+    "request_id": "PA-2603-01399",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 8 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2607-01601",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DX-9581",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-104 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Inconclusive home sleep test (HSAT)",
+        "status": "MET",
+        "clinical_evidence": "HSAT performed; AHI 4.1 with low recording time, inconclusive."
+      }
+    ],
+    "rationale": "The patient has an inconclusive home sleep test as indicated by the AHI of 4.1 and low recording time. This meets the criteria for attended in-laboratory polysomnography as outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2604-01713",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-DME-0601",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "CPAP usage of >= 4 hours per night on at least 70% of nights during a consecutive 30-day period",
+        "status": "MET",
+        "clinical_evidence": "usage >= 4 hrs on 80% of nights"
+      }
+    ],
+    "rationale": "The patient has met the criteria for continued CPAP coverage as the objective device download shows usage of 4 hours or more on 80% of nights during the required 30-day period. This satisfies the governing criteria outlined in MP-118 v1 Section 3."
+  },
+  {
+    "request_id": "PA-2602-01860",
+    "client_id": "HARLAN",
+    "service_code": "BHA-DME-2103",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a continuous glucose monitor. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2607-00218",
+    "client_id": "HARLAN",
+    "service_code": "BHA-THER-1830",
+    "error_type": "MISSING_INFO_NOT_REQUESTED",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "PEND_FOR_INFO",
+    "copilot_decision": "APPROVE",
+    "decision_matched": false,
+    "qa_governing_source": "MP-112 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-112 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Wagner grade 3 or higher",
+        "status": "MET",
+        "clinical_evidence": "Wagner grade 4"
+      },
+      {
+        "criterion": "standard wound care failed for >= 30 days",
+        "status": "NOT_MET",
+        "clinical_evidence": "No documentation provided regarding the duration of standard wound care or its failure."
+      }
+    ],
+    "rationale": "The patient has a diabetic foot ulcer classified as Wagner grade 4, which meets the requirement for HBOT. However, there is no documentation confirming that standard wound care has failed for at least 30 days, which is necessary for approval."
+  },
+  {
+    "request_id": "PA-2605-01076",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-6350",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "PEND_FOR_INFO",
+    "decision_matched": false,
+    "qa_governing_source": "MP-110 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-110 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Intractable neuropathic spine/leg pain failing >= 6 months conservative therapy",
+        "status": "NOT_MET",
+        "clinical_evidence": "Has not yet done PT. Tried gabapentin only."
+      },
+      {
+        "criterion": "pre-trial psychological evaluation cleared",
+        "status": "MISSING_DOCUMENTATION",
+        "clinical_evidence": "Psych eval pending."
+      }
+    ],
+    "rationale": "The patient has not completed the required conservative therapy, as they have only tried gabapentin and have not yet undergone physical therapy. Additionally, the psychological evaluation is still pending, which is necessary for approval of the spinal cord stimulator trial."
+  },
+  {
+    "request_id": "PA-2608-00409",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-SURG-3052",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Continuous symptomatic nasal airway obstruction refractory to at least 4 weeks of medical therapy (intranasal steroids)",
+        "status": "MET",
+        "clinical_evidence": "Fluticasone and cetirizine x 6 weeks without improvement."
+      },
+      {
+        "criterion": "Physical exam showing severe septal deviation",
+        "status": "MET",
+        "clinical_evidence": "leftward septal deviation obstructing right airway."
+      }
+    ],
+    "rationale": "The patient has documented chronic nasal obstruction that has not improved after 6 weeks of intranasal steroid therapy, meeting the requirement for refractory symptoms. Additionally, the physical examination confirms severe septal deviation obstructing the airway, fulfilling the criteria for septoplasty."
+  },
+  {
+    "request_id": "PA-2603-00986",
+    "client_id": "KESTREL",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "MET",
+        "clinical_evidence": "BMI 44.1. Comorbidities: type 2 diabetes on metformin."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery",
+        "status": "MET",
+        "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      }
+    ],
+    "rationale": "The patient meets the criteria for bariatric surgery with a BMI of 44.1 and has a comorbidity of type 2 diabetes. Additionally, the required pre-operative psychological evaluation has been completed and the patient has been cleared for surgery."
+  },
+  {
+    "request_id": "PA-2607-00746",
+    "client_id": "HARLAN",
+    "service_code": "BHA-SURG-3052",
+    "error_type": "MISSING_INFO_NOT_REQUESTED",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "PEND_FOR_INFO",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": false,
+    "qa_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Continuous symptomatic nasal airway obstruction refractory to at least 4 weeks of medical therapy (intranasal steroids)",
+        "status": "NOT_MET",
+        "clinical_evidence": "Chronic nasal obstruction, worse on right."
+      },
+      {
+        "criterion": "Physical exam showing severe septal deviation",
+        "status": "MET",
+        "clinical_evidence": "leftward septal deviation obstructing right airway."
+      }
+    ],
+    "rationale": "The patient has a documented chronic nasal obstruction and a physical exam indicating severe septal deviation. However, there is no evidence that the patient has undergone at least 4 weeks of medical therapy with intranasal steroids, which is a requirement for medical necessity for septoplasty."
+  },
+  {
+    "request_id": "PA-2603-01641",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-103 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diabetes mellitus (type 1 or type 2)",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "treatment with insulin of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "On insulin pump therapy (Omnipod)"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin pump therapy, which satisfies the criteria for coverage of Continuous Glucose Monitors (CGM). Both required criteria are met, justifying the approval of the requested service."
+  },
+  {
+    "request_id": "PA-2602-00567",
+    "client_id": "RB-MA",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Red flags (cauda equina, fever, progressive deficit)",
+        "status": "NOT_MET",
+        "clinical_evidence": "Patient presents with low back pain, no radiation below the knee, neuro exam intact."
+      },
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "NOT_MET",
+        "clinical_evidence": "Has completed 2 weeks of PT and scheduled naproxen without adequate relief."
+      },
+      {
+        "criterion": "Pre-surgical planning",
+        "status": "NOT_MET",
+        "clinical_evidence": "Requesting MRI lumbar spine without contrast."
+      }
+    ],
+    "rationale": "The patient has not met the criteria for advanced imaging as there are no red flags present, and the conservative therapy duration is only 2 weeks, which is insufficient. Additionally, there is no indication of pre-surgical planning in the documentation."
+  },
+  {
+    "request_id": "PA-2601-00254",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-6350",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-110 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-110 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Intractable neuropathic spine/leg pain failing >= 6 months conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Failed back surgery syndrome with neuropathic leg pain x 12 months. Completed PT and injections without relief. Tried gabapentin and duloxetine."
+      },
+      {
+        "criterion": "Pre-trial psychological evaluation cleared",
+        "status": "MET",
+        "clinical_evidence": "Psych eval: cleared for SCS."
+      }
+    ],
+    "rationale": "The patient has documented intractable neuropathic leg pain for 12 months, having failed multiple conservative therapies including physical therapy, injections, and medications. Additionally, the psychological evaluation has been completed and cleared, meeting all necessary criteria for the spinal cord stimulator trial."
+  },
+  {
+    "request_id": "PA-2602-01095",
+    "client_id": "KESTREL",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "PEND_FOR_INFO",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-KESTREL Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 25 visits per plan year)",
+    "copilot_governing_source": "SPD-KESTREL Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 25 visits per plan year)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Physical therapy request (26 visits used + 8 requested = 34) exceeds the annual benefit limit of 25 visits under SPD-KESTREL Section 4.2."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Physical therapy request (26 visits used + 8 requested = 34) exceeds the annual benefit limit of 25 visits under SPD-KESTREL Section 4.2."
+  },
+  {
+    "request_id": "PA-2606-01923",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-SURG-3052",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-109 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Continuous symptomatic nasal airway obstruction refractory to at least 4 weeks of medical therapy (intranasal steroids)",
+        "status": "MET",
+        "clinical_evidence": "Fluticasone and cetirizine x 6 weeks without improvement."
+      },
+      {
+        "criterion": "Physical exam showing severe septal deviation",
+        "status": "MET",
+        "clinical_evidence": "leftward septal deviation obstructing right airway."
+      }
+    ],
+    "rationale": "The patient has documented chronic nasal obstruction that has not improved after 6 weeks of medical therapy with intranasal steroids and antihistamines. Additionally, the physical examination confirms severe septal deviation obstructing the airway, meeting the criteria for septoplasty."
+  },
+  {
+    "request_id": "PA-2608-01649",
+    "client_id": "KESTREL",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-KESTREL Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 25 visits per plan year)",
+    "copilot_governing_source": "SPD-KESTREL Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 25 visits per plan year)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Physical therapy request (24 visits used + 4 requested = 28) exceeds the annual benefit limit of 25 visits under SPD-KESTREL Section 4.2."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Physical therapy request (24 visits used + 4 requested = 28) exceeds the annual benefit limit of 25 visits under SPD-KESTREL Section 4.2."
+  },
+  {
+    "request_id": "PA-2607-00093",
+    "client_id": "RB-ACA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "NOT_MET",
+        "clinical_evidence": "ROM plateaued over last 6 visits; continuing for maintenance."
+      }
+    ],
+    "rationale": "The request for additional outpatient physical therapy visits does not meet the medical necessity criteria as the patient has reached a plateau in range of motion (ROM) over the last 6 visits, indicating that the therapy is now maintenance rather than aimed at achieving measurable functional progress. Therefore, the request is denied based on the lack of documented progress toward stated goals."
+  },
+  {
+    "request_id": "PA-2606-01920",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin treatment, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2603-01308",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-BRIGHT Section 5.3 (Bariatric surgery covered only at designated Centers of Excellence)",
+    "copilot_governing_source": "SPD-BRIGHT Section 5.3 (Bariatric surgery covered only at designated Center of Excellence)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Bariatric surgery planned at 'Sample Facility', which is not a designated Center of Excellence (COE) under SPD-BRIGHT Section 5.3."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Bariatric surgery planned at 'Sample Facility', which is not a designated Center of Excellence (COE) under SPD-BRIGHT Section 5.3."
+  },
+  {
+    "request_id": "PA-2604-00545",
+    "client_id": "RB-MA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2601-00667",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin treatment, which meets the criteria for Continuous Glucose Monitors as outlined in the governing policy. The A1c level of 8.9% further supports the medical necessity for CGM to manage their diabetes effectively."
+  },
+  {
+    "request_id": "PA-2606-00857",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: basal-bolus insulin, glargine plus lispro with each meal"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is on a basal-bolus insulin regimen, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. Both criteria for diabetes and insulin treatment are satisfied, warranting approval for the requested CGM system and sensors."
+  },
+  {
+    "request_id": "PA-2603-00224",
+    "client_id": "BRIGHT",
+    "service_code": "BHA-HH-0550",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-116 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-116 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Patient is homebound",
+        "status": "MET",
+        "clinical_evidence": "Leaves home only for medical visits with assistance of walker and caregiver; considerable effort."
+      },
+      {
+        "criterion": "Requires intermittent skilled nursing or therapy",
+        "status": "MET",
+        "clinical_evidence": "Needs skilled nursing for wound care and IV antibiotic teaching."
+      },
+      {
+        "criterion": "Under physician plan of care",
+        "status": "MET",
+        "clinical_evidence": "Plan of care signed by Dr. Osei."
+      }
+    ],
+    "rationale": "The patient meets all criteria for home health services as they are homebound, require skilled nursing for wound care and IV antibiotic teaching, and have a signed plan of care from their physician. Therefore, the request for home health services is justified and should be approved."
+  },
+  {
+    "request_id": "PA-2604-00758",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: basal-bolus insulin, glargine plus lispro with each meal"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is on a basal-bolus insulin regimen, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. Both criteria for diabetes and insulin treatment are satisfied, warranting approval for the requested CGM system and sensors."
+  },
+  {
+    "request_id": "PA-2606-00711",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin treatment, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system."
+  },
+  {
+    "request_id": "PA-2608-02091",
+    "client_id": "RB-MA",
+    "service_code": "BHA-VASC-3647",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-111 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-111 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Documented venous reflux >= 500 ms on duplex ultrasound",
+        "status": "MET",
+        "clinical_evidence": "Duplex: GSV reflux 700 ms."
+      },
+      {
+        "criterion": "Symptomatic impairment",
+        "status": "MET",
+        "clinical_evidence": "Aching and heaviness in right leg, ankle edema by evening."
+      },
+      {
+        "criterion": "Failure of >= 3 months trial of medical-grade compression stockings",
+        "status": "MET",
+        "clinical_evidence": "Compression stockings 20-30 mmHg x 4 months."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for endovenous ablation of varicose veins. There is documented venous reflux of 700 ms, symptomatic impairment with aching and edema, and a successful trial of compression stockings for 4 months. Therefore, the request for endovenous radiofrequency ablation is approved."
+  },
+  {
+    "request_id": "PA-2608-00740",
+    "client_id": "KESTREL",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "DENY_NOT_COVERED",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "MET",
+        "clinical_evidence": "BMI 44.1. Comorbidities: dyslipidemia."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery",
+        "status": "MET",
+        "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      }
+    ],
+    "rationale": "The patient meets the criteria for bariatric surgery with a BMI of 44.1 and has a comorbidity of dyslipidemia. Additionally, the required pre-operative psychological evaluation has been completed and the patient has been cleared for surgery."
+  },
+  {
+    "request_id": "PA-2603-02146",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-2103",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "copilot_governing_source": "RIVERBEND-ADDENDUM Section 2.1 (CGM: Medicare coverage criteria apply to MA members)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Diagnosis of diabetes mellitus",
+        "status": "MET",
+        "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
+      },
+      {
+        "criterion": "Insulin treatment of any type or frequency",
+        "status": "MET",
+        "clinical_evidence": "Current regimen: basal-bolus insulin, glargine plus lispro with each meal"
+      }
+    ],
+    "rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is on a basal-bolus insulin regimen, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. Both criteria for diabetes and insulin treatment are satisfied, warranting approval for the requested CGM system and sensors."
+  },
+  {
+    "request_id": "PA-2605-00348",
+    "client_id": "HARLAN",
+    "service_code": "BHA-LAB-8162",
+    "error_type": "CRITERIA_MISREAD",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-107 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-107 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Documented family history or early-onset breast/ovarian cancer meeting NCCN guidelines",
+        "status": "MET",
+        "clinical_evidence": "Personal history of breast cancer diagnosed at age 47. Sister tested positive for pathogenic BRCA2 variant last year."
+      },
+      {
+        "criterion": "Pre-test genetic counseling completed",
+        "status": "MISSING_DOCUMENTATION",
+        "clinical_evidence": "No documentation of pre-test genetic counseling provided."
+      }
+    ],
+    "rationale": "The patient has a personal history of breast cancer at age 47 and a sister with a pathogenic BRCA2 variant, which meets the criteria for documented family history. However, there is no evidence of pre-test genetic counseling being completed, which is required for approval."
+  },
+  {
+    "request_id": "PA-2601-01919",
+    "client_id": "HARLAN",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of conservative therapy (physical therapy and naproxen) without adequate relief. This meets the criteria for advanced imaging as outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2601-01811",
+    "client_id": "SORREL",
+    "service_code": "BHA-SURG-2744",
+    "error_type": "OUTDATED_POLICY_VERSION",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-106 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-106 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radiographic OA KL grade 3 or 4",
+        "status": "MET",
+        "clinical_evidence": "Left knee OA, KL grade 4 on standing films."
+      },
+      {
+        "criterion": "Functional limitation interfering with ADL",
+        "status": "MET",
+        "clinical_evidence": "Unable to walk more than one block, difficulty with stairs and dressing."
+      },
+      {
+        "criterion": "Failure of >= 3 months conservative management",
+        "status": "MET",
+        "clinical_evidence": "Conservative mgmt x 6 months (PT, NSAIDs, injections)."
+      },
+      {
+        "criterion": "If BMI >= 40, documented pre-operative risk optimization discussion (weight, A1c, smoking)",
+        "status": "MET",
+        "clinical_evidence": "BMI 42.5. Pre-op optimization discussed with patient (weight, A1c, smoking) and documented."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for total knee arthroplasty as outlined in the governing policy. They have KL grade 4 osteoarthritis, significant functional limitations, have undergone more than 3 months of conservative management, and have had a documented pre-operative risk optimization discussion due to their BMI of 42.5."
+  },
+  {
+    "request_id": "PA-2608-00826",
+    "client_id": "RB-MA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy."
+  },
+  {
+    "request_id": "PA-2605-00970",
+    "client_id": "OSTR",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Red flags (cauda equina, fever, progressive deficit)",
+        "status": "NOT_MET",
+        "clinical_evidence": "Patient presents with low back pain radiating down the left leg in an L5 distribution."
+      },
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      },
+      {
+        "criterion": "Pre-surgical planning",
+        "status": "NOT_MET",
+        "clinical_evidence": "Requesting MRI lumbar spine without contrast."
+      }
+    ],
+    "rationale": "The patient has experienced radicular pain for over 4 weeks despite conservative therapy, which meets the criteria for advanced imaging. Although there are no red flags or indications for pre-surgical planning, the persistent radicular pain justifies the MRI request."
+  },
+  {
+    "request_id": "PA-2604-01837",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-1582",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-108 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Superior visual field loss of 30 degrees or more taped vs. untaped on formal Humphrey visual field testing",
+        "status": "MET",
+        "clinical_evidence": "Humphrey visual field: superior field loss 32 degrees taped vs untaped."
+      },
+      {
+        "criterion": "External photographs showing lid margin resting on or near pupil",
+        "status": "MET",
+        "clinical_evidence": "External photographs attached."
+      }
+    ],
+    "rationale": "The patient meets the criteria for upper blepharoplasty as there is documented superior visual field loss of 32 degrees, which exceeds the required 30 degrees. Additionally, external photographs have been provided, confirming the lid margin's position. Therefore, the request for bilateral upper blepharoplasty is approved."
+  },
+  {
+    "request_id": "PA-2601-01293",
+    "client_id": "HARLAN",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of conservative therapy (physical therapy and naproxen) without adequate relief. This meets the criteria for advanced imaging as outlined in the governing policy."
+  },
+  {
+    "request_id": "PA-2604-01855",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-4310",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-102 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "BMI >= 40 OR (BMI >= 35 with comorbidity)",
+        "status": "MET",
+        "clinical_evidence": "BMI 44.1. Comorbidities: type 2 diabetes on metformin."
+      },
+      {
+        "criterion": "Pre-op psychological evaluation clearing member for surgery",
+        "status": "MET",
+        "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      }
+    ],
+    "rationale": "The patient meets the criteria for bariatric surgery with a BMI of 44.1 and has a comorbidity of type 2 diabetes. Additionally, the required pre-operative psychological evaluation has been completed and the patient has been cleared for surgery."
+  },
+  {
+    "request_id": "PA-2607-02153",
+    "client_id": "RB-MA",
+    "service_code": "BHA-SURG-2988",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-105 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Mechanical symptoms (locking, catching)",
+        "status": "MET",
+        "clinical_evidence": "Reports intermittent locking and catching."
+      },
+      {
+        "criterion": "Meniscal tear on MRI",
+        "status": "MET",
+        "clinical_evidence": "MRI: complex tear posterior horn medial meniscus."
+      },
+      {
+        "criterion": "Failure of >= 6 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "8 weeks PT, NSAIDs, one steroid injection."
+      },
+      {
+        "criterion": "Absence of advanced osteoarthritis (Kellgren-Lawrence grade 3 or 4)",
+        "status": "MET",
+        "clinical_evidence": "X-ray: Kellgren-Lawrence grade 2."
+      }
+    ],
+    "rationale": "The patient meets all the criteria for arthroscopic knee surgery as outlined in MP-105 v1 Section 3. They exhibit mechanical symptoms of locking and catching, have a confirmed meniscal tear on MRI, have undergone 8 weeks of conservative therapy, and have a Kellgren-Lawrence grade of 2, indicating the absence of advanced osteoarthritis."
+  },
+  {
+    "request_id": "PA-2603-01383",
+    "client_id": "SORREL",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "DENY_MEDICAL_NECESSITY",
+    "copilot_decision": "DENY_MEDICAL_NECESSITY",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "NOT_MET",
+        "clinical_evidence": "ROM plateaued over last 6 visits; continuing for maintenance."
+      }
+    ],
+    "rationale": "The request for additional outpatient physical therapy is denied due to the lack of documented measurable functional progress. The clinical notes indicate that the patient's range of motion has plateaued and that therapy is now considered maintenance, which does not meet the criteria for additional visits."
+  },
+  {
+    "request_id": "PA-2605-02122",
+    "client_id": "KESTREL",
+    "service_code": "BHA-REH-9711",
+    "error_type": "CLIENT_RULE_MISSED",
+    "original_human_decision": "PEND_FOR_INFO",
+    "qa_correct_decision": "DENY_NOT_COVERED",
+    "copilot_decision": "DENY_NOT_COVERED",
+    "decision_matched": true,
+    "qa_governing_source": "SPD-KESTREL Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 25 visits per plan year)",
+    "copilot_governing_source": "SPD-KESTREL Section 4.2 (Schedule of Benefits: outpatient rehabilitation limited to 25 visits per plan year)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Covered Health Benefit Verification",
+        "status": "NOT_MET",
+        "clinical_evidence": "Physical therapy request (20 visits used + 6 requested = 26) exceeds the annual benefit limit of 25 visits under SPD-KESTREL Section 4.2."
+      }
+    ],
+    "rationale": "Request is not covered under the applicable plan terms. Physical therapy request (20 visits used + 6 requested = 26) exceeds the annual benefit limit of 25 visits under SPD-KESTREL Section 4.2."
+  },
+  {
+    "request_id": "PA-2604-02135",
+    "client_id": "SORREL",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 5 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  },
+  {
+    "request_id": "PA-2603-00762",
+    "client_id": "RB-MA",
+    "service_code": "BHA-DME-0601",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-118 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "CPAP usage of >= 4 hours per night on at least 70% of nights during a consecutive 30-day period",
+        "status": "MET",
+        "clinical_evidence": "usage >= 4 hrs on 80% of nights"
+      }
+    ],
+    "rationale": "The patient has met the criteria for continued CPAP coverage as the device download shows usage of 4 hours or more on 80% of nights over a consecutive 30-day period. This satisfies the requirement of at least 70% compliance within the first 90 days of therapy."
+  },
+  {
+    "request_id": "PA-2605-00724",
+    "client_id": "HARLAN",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "MEMO_CONFLICT",
+    "original_human_decision": "DENY_MEDICAL_NECESSITY",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Pre-surgical planning",
+        "status": "MET",
+        "clinical_evidence": "Seen by Dr. Kaur (spine surgery) who has recommended L4-5 microdiscectomy; MRI needed for surgical planning."
+      }
+    ],
+    "rationale": "The request for an MRI of the lumbar spine is justified for pre-surgical planning as indicated by the recommendation from Dr. Kaur for a microdiscectomy. The clinical documentation supports the necessity of the MRI to facilitate appropriate surgical intervention."
+  },
+  {
+    "request_id": "PA-2604-02138",
+    "client_id": "RB-MA",
+    "service_code": "BHA-REH-9711",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-114 v1 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Current progress note dated within last 10 visits",
+        "status": "MET",
+        "clinical_evidence": "Progress note dated within last 10 visits attached."
+      },
+      {
+        "criterion": "Documented measurable functional progress toward stated goals, with goals not yet met (not maintenance therapy)",
+        "status": "MET",
+        "clinical_evidence": "Shoulder flexion improved 90 to 140 degrees; goal 170. QuickDASH 58 to 34."
+      }
+    ],
+    "rationale": "The patient has shown measurable functional progress with shoulder flexion improving from 90 to 140 degrees, with a goal of 170 degrees still unmet. Additionally, the progress note is current and within the required timeframe, supporting the need for additional therapy visits."
+  },
+  {
+    "request_id": "PA-2604-01384",
+    "client_id": "JUNIPER",
+    "service_code": "BHA-IMG-0721",
+    "error_type": "NONE",
+    "original_human_decision": "APPROVE",
+    "qa_correct_decision": "APPROVE",
+    "copilot_decision": "APPROVE",
+    "decision_matched": true,
+    "qa_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "copilot_governing_source": "MP-101 v2 Section 3 (Coverage Criteria)",
+    "source_matched": true,
+    "checklist": [
+      {
+        "criterion": "Radicular pain persisting despite >= 4 weeks conservative therapy",
+        "status": "MET",
+        "clinical_evidence": "Has completed 8 weeks of PT and scheduled naproxen without adequate relief."
+      }
+    ],
+    "rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 8 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment."
+  }
+]
