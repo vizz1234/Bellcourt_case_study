@@ -288,14 +288,17 @@ class FaxDocumentParser:
         return data
 
 
+from src.llm_guardrail import LLMGuardrail
+
 class IntakeTriageEngine:
     """
     Unified Intelligent Intake and Triage Engine for Bellcourt Health Administrators.
     Ingests Multi-Channel submissions, validates eligibility, executes adversarial guardrails,
     enforces completeness, and computes true SLA clocks.
     """
-    def __init__(self, eligibility_csv_path: str):
+    def __init__(self, eligibility_csv_path: str, openrouter_key: Optional[str] = None):
         self.eligibility_validator = EligibilityValidator(eligibility_csv_path)
+        self.guardrail = LLMGuardrail(api_key=openrouter_key)
 
     def process_case(self, case_input: Dict[str, Any], fax_base_dir: str = "") -> Dict[str, Any]:
         """
@@ -318,12 +321,21 @@ class IntakeTriageEngine:
                 if v is not None or k not in merged_data:
                     merged_data[k] = v
 
-        # 2. Adversarial Guardrails & Prompt Injection Analysis
+        # 2. Dual-Layer Adversarial Guardrails & LLM Security Audit
         raw_notes = merged_data.get("clinical_notes", "")
-        sec_flags, sanitized_notes = AdversarialDetector.analyze(raw_notes)
-        merged_data["clinical_notes_sanitized"] = sanitized_notes
-        merged_data["security_flags"] = sec_flags
-        merged_data["has_security_alert"] = len(sec_flags) > 0
+        context = {
+            "case_id": case_id,
+            "patient_name": merged_data.get("patient_name"),
+            "service_requested": merged_data.get("service_requested"),
+            "client_id": client_id
+        }
+        guard_res = self.guardrail.audit_clinical_notes(raw_notes, context=context)
+        merged_data["clinical_notes_sanitized"] = guard_res["sanitized_notes"]
+        merged_data["security_flags"] = guard_res["flags"]
+        merged_data["security_risk_score"] = guard_res["risk_score"]
+        merged_data["security_evaluator"] = guard_res["evaluator"]
+        merged_data["security_rationale"] = guard_res["audit_rationale"]
+        merged_data["has_security_alert"] = guard_res["has_adversarial_content"]
 
         # 3. Missing Field & Completeness Check
         missing_fields = []
@@ -394,7 +406,10 @@ class IntakeTriageEngine:
             "action_required": action_required,
             "missing_fields": missing_fields,
             "eligibility_status": elig_result,
-            "security_alerts": sec_flags,
+            "security_alerts": merged_data.get("security_flags", []),
+            "security_risk_score": merged_data.get("security_risk_score", 0),
+            "security_evaluator": merged_data.get("security_evaluator", "HEURISTIC_ENGINE"),
+            "security_rationale": merged_data.get("security_rationale", ""),
             "sla_tracking": sla_info,
             "deficiency_notice": deficiency_notice
         }
