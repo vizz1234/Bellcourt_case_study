@@ -34,10 +34,10 @@ class LLMGuardrail:
         (re.compile(r'system\s+override', re.I), "System Override: Administrative privilege escalation attempt"),
     ]
 
-    def __init__(self, api_key: Optional[str] = None, model: str = "google/gemini-2.0-flash-001"):
+    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
         # Support both OPENROUTER_API_KEY and OPEN_ROUTER_API_KEY
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY") or os.getenv("OPEN_ROUTER_API_KEY")
-        self.model = model
+        self.model = model or os.getenv("LLM_GUARDRAIL_MODEL") or "openai/gpt-4o-mini"
         self.is_valid_openrouter_key = bool(self.api_key and self.api_key.startswith("sk-or-"))
 
     def audit_clinical_notes(self, clinical_notes: Optional[str], context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
