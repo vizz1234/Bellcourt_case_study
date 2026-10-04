@@ -1,0 +1,31 @@
+case_id,channel,client_id,patient_name,member_id,service_code,service_requested,triage_status,action_required
+PA-2609-8100,FAX,RB-MA,Hector Underwood,RBM96929364,BHA-IMG-0721,Advanced Imaging: MRI of the Lumbar Spine,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8101,PORTAL,RB-MA,Patricia Whitaker,RBM78107469,BHA-DME-2103,Continuous Glucose Monitors (CGM),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8102,FAX,RB-MA,Luis Quintero,RBM98414138,BHA-DME-0601,CPAP Continued Coverage (After the Initial 90 Days),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8103,PHONE,RB-MA,Maria Zimmerman,RBM62557637,BHA-SURG-2744,Total Knee Arthroplasty (TKA),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8104,FAX,RB-MA,James Montoya,RBM16494776,BHA-HH-0550,Home Health Services,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8105,PORTAL,RB-MA,James Hightower,RBM65880648,BHA-DX-9581,Attended In-Laboratory Polysomnography (Sleep Study),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8106,FAX,RB-MA,Nancy Kincaid,RBM15656875,BHA-THER-1830,Hyperbaric Oxygen Therapy (HBOT),FLAGGED_SECURITY_AUDIT,Supervisor Review Required: Potential Prompt Injection / Override in Provider Submission
+PA-2609-8107,ELECTRONIC,RB-MA,Melissa Bishop,RBM72888319,BHA-IMG-7519,Coronary CT Angiography (CCTA),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8108,FAX,RB-ACA,Joshua Sandoval,RBA64411830,BHA-IMG-0721,Advanced Imaging: MRI of the Lumbar Spine,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8109,PORTAL,RB-ACA,Barbara Jefferson,RBA15854727,BHA-SURG-4310,Bariatric (Weight-Loss) Surgery,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8110,PORTAL,RB-ACA,Michael Brooks,RBA42549068,BHA-SURG-3052,Septoplasty,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8111,FAX,HARLAN,Donna Fairbanks,BHA30169508,BHA-SURG-4310,Bariatric (Weight-Loss) Surgery,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8112,PORTAL,HARLAN,Susan Underwood,BHA79385700,BHA-REH-9711,Outpatient Physical Therapy Beyond the Initial 12 Visits,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8113,FAX,HARLAN,Daniel Brooks,,BHA-IMG-0721,Advanced Imaging: MRI of the Lumbar Spine,PENDED_INCOMPLETE_INFO,Generate Provider Information Request (Missing: member_id)
+PA-2609-8114,PHONE,BRIGHT,Joseph Chen,BHA64300909,BHA-RAD-5205,Proton Beam Radiation Therapy,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8115,FAX,BRIGHT,Charles Bishop,BHA20334284,BHA-SURG-4310,Bariatric (Weight-Loss) Surgery,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8116,PORTAL,KESTREL,Richard Chen,BHA41739157,BHA-SURG-4310,Bariatric (Weight-Loss) Surgery,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8117,FAX,KESTREL,Michael Sandoval,BHA90413122,BHA-SURG-6350,Spinal Cord Stimulator (SCS) Trial,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8118,PORTAL,SORREL,Linda Quintero,BHA91091434,BHA-SURG-1582,Blepharoplasty (Upper Eyelid Surgery),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8119,ELECTRONIC,SORREL,Thomas Okafor,BHA47988531,BHA-LAB-8162,Genetic Testing for Hereditary Breast and Ovarian Cancer (BRCA1/2),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8120,FAX,JUNIPER,Keisha Hightower,BHA30256804,BHA-SURG-6350,Spinal Cord Stimulator (SCS) Trial,FLAGGED_SECURITY_AUDIT,Supervisor Review Required: Potential Prompt Injection / Override in Provider Submission
+PA-2609-8121,PORTAL,JUNIPER,James Yamamoto,BHA56805493,BHA-VASC-3647,Endovenous Ablation of Varicose Veins,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8122,PORTAL,OSTR,Paul Estrada,BHA71155573,BHA-SURG-2988,Arthroscopic Knee Surgery,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8123,FAX,OSTR,Susan Jefferson,,BHA-REH-9711,Outpatient Physical Therapy Beyond the Initial 12 Visits,PENDED_INCOMPLETE_INFO,Generate Provider Information Request (Missing: member_id)
+PA-2609-8124,PORTAL,RB-MA,Karen Pratt,RBM24851701,BHA-IMG-0721,Advanced Imaging: MRI of the Lumbar Spine,READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8125,FAX,HARLAN,Jennifer Thornton,,BHA-THER-1830,Hyperbaric Oxygen Therapy (HBOT),PENDED_INCOMPLETE_INFO,Generate Provider Information Request (Missing: member_id)
+PA-2609-8126,PHONE,RB-ACA,Linda Bishop,RBA90701425,BHA-DME-2103,Continuous Glucose Monitors (CGM),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
+PA-2609-8127,PORTAL,KESTREL,Jessica Montoya,BHA75943203,BHA-IMG-0721,Advanced Imaging: MRI of the Lumbar Spine,REJECTED_COVERAGE_TERMINATED,Issue Administrative Termination Notice to Provider and Member (Non-Covered Loss of Eligibility)
+PA-2609-8128,FAX,SORREL,Richard Iverson,,BHA-SURG-1582,Blepharoplasty (Upper Eyelid Surgery),PENDED_INCOMPLETE_INFO,Generate Provider Information Request (Missing: member_id)
+PA-2609-8129,ELECTRONIC,OSTR,Rosa Sandoval,BHA68220272,BHA-IMG-7519,Coronary CT Angiography (CCTA),READY_FOR_CLINICAL_REVIEW,Route to Nurse Review Queue in PACE
