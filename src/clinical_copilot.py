@@ -105,6 +105,8 @@ class ClinicalCopilot:
         date_of_service = case_data.get("date_of_service", "2026-09-24")
         clinical_notes = case_data.get("clinical_notes_sanitized") or case_data.get("clinical_notes") or case_data.get("clinical_summary", "")
         member_state = case_data.get("member_state")
+        if not member_state and isinstance(case_data.get("eligibility_status"), dict):
+            member_state = case_data.get("eligibility_status", {}).get("record", {}).get("member_state")
         provider = case_data.get("requesting_provider", "")
 
         # Calculate patient age if DOB is present

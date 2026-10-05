@@ -10,9 +10,11 @@
         "clinical_evidence": "Has completed 5 weeks of PT and scheduled naproxen without adequate relief."
       }
     ],
-    "clinical_rationale": "The patient has documented radicular pain radiating down the left leg in an L5 distribution and has undergone 5 weeks of physical therapy and naproxen without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative treatment.",
+    "clinical_rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 5 weeks of physical therapy and naproxen treatment without adequate relief. This meets the criteria for advanced imaging as the patient has persistent radicular pain despite conservative therapy.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
+    "state_licensing_flags": [
+      "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
+    ],
     "texas_ai_disclosure": null
   },
   {
@@ -31,9 +33,11 @@
         "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
       }
     ],
-    "clinical_rationale": "The patient has a documented diagnosis of type 2 diabetes mellitus and is currently on insulin treatment with insulin glargine. Both criteria for Continuous Glucose Monitor coverage are satisfied, warranting approval.",
+    "clinical_rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is currently on insulin treatment, which meets the criteria for Continuous Glucose Monitors (CGM) coverage. The A1c level of 8.9% indicates poor glycemic control, further supporting the medical necessity for the requested CGM system.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
+    "state_licensing_flags": [
+      "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
+    ],
     "texas_ai_disclosure": null
   },
   {
@@ -47,10 +51,12 @@
         "clinical_evidence": "usage >= 4 hrs on 45% of nights"
       }
     ],
-    "clinical_rationale": "The patient has been using CPAP for approximately 80 days, but the device download shows usage of >= 4 hours on only 45% of nights during the required 30-day period. This does not meet the governing criteria of at least 70% compliance for continued coverage.",
+    "clinical_rationale": "The patient has been using the CPAP for approximately 80 days, but the device download shows that they achieved the required usage of 4 hours per night on only 45% of nights, which does not meet the necessary threshold of 70%. Therefore, the criteria for continued coverage are not satisfied.",
     "required_role": "PHYSICIAN_REVIEWER",
-    "state_licensing_flags": [],
-    "texas_ai_disclosure": null
+    "state_licensing_flags": [
+      "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
+    ],
+    "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
   },
   {
     "case_id": "PA-2609-8103",
@@ -73,15 +79,17 @@
         "clinical_evidence": "Conservative mgmt x 6 months (PT, NSAIDs, injections)."
       },
       {
-        "criterion": "If BMI >= 40, documented pre-operative risk optimization discussion",
+        "criterion": "If BMI >= 40, documented pre-operative risk optimization discussion (weight, A1c, smoking)",
         "status": "MET",
-        "clinical_evidence": "BMI 42.6. Pre-op optimization discussed with patient (weight, A1c, smoking) and documented."
+        "clinical_evidence": "Pre-op optimization discussed with patient (weight, A1c, smoking) and documented; patient enrolled in pre-hab."
       }
     ],
-    "clinical_rationale": "The patient meets all the criteria for total knee arthroplasty as outlined in the governing policy. She has KL grade 4 osteoarthritis, significant functional limitations, has undergone 6 months of conservative management, and has had a documented pre-operative risk optimization discussion due to her BMI of 42.6.",
+    "clinical_rationale": "The patient meets all the criteria for total knee arthroplasty as outlined in the governing policy. She has KL grade 4 osteoarthritis, significant functional limitations, has undergone more than 3 months of conservative management, and has had a documented pre-operative risk optimization discussion due to her BMI of 42.6.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
-    "texas_ai_disclosure": null
+    "state_licensing_flags": [
+      "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
+    ],
+    "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
   },
   {
     "case_id": "PA-2609-8104",
@@ -106,8 +114,10 @@
     ],
     "clinical_rationale": "The patient meets all criteria for home health services as they are homebound, require skilled nursing for wound care and IV antibiotic teaching, and have a signed plan of care from their physician. Therefore, the request for home health services is approved.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
-    "texas_ai_disclosure": null
+    "state_licensing_flags": [
+      "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
+    ],
+    "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
   },
   {
     "case_id": "PA-2609-8105",
@@ -122,12 +132,14 @@
       {
         "criterion": "Suspected non-OSA sleep disorder (narcolepsy, parasomnia, central apnea)",
         "status": "NOT_MET",
-        "clinical_evidence": "No indication of non-OSA sleep disorders such as narcolepsy or parasomnia."
+        "clinical_evidence": "Loud snoring, witnessed apneas, Epworth 14."
       }
     ],
-    "clinical_rationale": "The patient does not meet the criteria for attended in-laboratory polysomnography as there is no evidence of an inconclusive home sleep test or a suspected non-OSA sleep disorder. The documentation indicates no prior sleep testing, which is necessary to justify the requested service.",
+    "clinical_rationale": "The patient does not meet the criteria for attended in-laboratory polysomnography as there is no documentation of an inconclusive home sleep test or a suspected non-OSA sleep disorder. The clinical notes indicate symptoms consistent with obstructive sleep apnea (OSA), but the governing criteria specifically require evidence of non-OSA conditions or an inconclusive HSAT for approval.",
     "required_role": "PHYSICIAN_REVIEWER",
-    "state_licensing_flags": [],
+    "state_licensing_flags": [
+      "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
+    ],
     "texas_ai_disclosure": null
   },
   {
@@ -141,14 +153,16 @@
         "clinical_evidence": "Diabetic foot ulcer L plantar, Wagner grade 3."
       },
       {
-        "criterion": "standard wound care failed for >= 30 days",
+        "criterion": "Standard wound care failed for >= 30 days",
         "status": "MET",
         "clinical_evidence": "Standard wound care (offloading, debridement) x 45.days, minimal granulation."
       }
     ],
-    "clinical_rationale": "The patient has a Wagner grade 3 diabetic foot ulcer, which meets the criteria for HBOT. Additionally, the documentation indicates that standard wound care has been attempted for 45 days with minimal improvement, satisfying the requirement for treatment failure.",
+    "clinical_rationale": "The patient has a Wagner grade 3 diabetic foot ulcer, which meets the criteria for HBOT. Additionally, the documentation indicates that standard wound care has been attempted for 45 days with minimal granulation, satisfying the requirement for treatment failure prior to HBOT.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
+    "state_licensing_flags": [
+      "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
+    ],
     "texas_ai_disclosure": null
   },
   {
@@ -167,9 +181,11 @@
         "clinical_evidence": "No information provided regarding initial stress test results or exercise capability."
       }
     ],
-    "clinical_rationale": "The patient has exertional chest pressure for 2 months and an intermediate pre-test probability of CAD, which meets the criteria for coronary CT angiography. However, documentation regarding a non-diagnostic initial stress test or inability to exercise is missing, which is necessary for full compliance with the criteria.",
+    "clinical_rationale": "The patient presents with exertional chest pressure for 2 months and has an intermediate pre-test probability of CAD, satisfying the first criterion for CCTA. However, documentation regarding a non-diagnostic initial stress test or inability to exercise is missing, which is necessary for full compliance with the criteria.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
+    "state_licensing_flags": [
+      "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
+    ],
     "texas_ai_disclosure": null
   },
   {
@@ -193,7 +209,7 @@
         "clinical_evidence": "No indication of surgical planning in the notes."
       }
     ],
-    "clinical_rationale": "The patient does not meet the criteria for advanced imaging as there are no red flags present, and the low back pain does not involve radicular symptoms. Additionally, there is no indication of pre-surgical planning, which is required for approval.",
+    "clinical_rationale": "The patient does not meet the criteria for advanced imaging as there are no red flags present, and while they have completed 4 weeks of conservative therapy, they do not exhibit radicular pain. Additionally, there is no indication of pre-surgical planning. Therefore, the request for an MRI of the lumbar spine is denied for medical necessity.",
     "required_role": "PHYSICIAN_REVIEWER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -209,12 +225,12 @@
         "clinical_evidence": "BMI 44.1. Comorbidities: type 2 diabetes on metformin."
       },
       {
-        "criterion": "Pre-op psychological evaluation clearing member for surgery",
+        "criterion": "Pre-op psychological evaluation clearing member for surgery.",
         "status": "MET",
         "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
       }
     ],
-    "clinical_rationale": "The patient meets the criteria for bariatric surgery with a BMI of 44.1 and has a comorbidity of type 2 diabetes. Additionally, the pre-operative psychological evaluation has been completed and the patient has been cleared for surgery.",
+    "clinical_rationale": "The patient meets the criteria for bariatric surgery as her BMI is 44.1, which exceeds the threshold of 40, and she has a comorbidity of type 2 diabetes. Additionally, the required pre-operative psychological evaluation has been completed and indicates she is cleared for surgery.",
     "required_role": "NURSE_APPROVER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -254,7 +270,7 @@
     "clinical_rationale": "Request is not covered under the applicable plan terms. Bariatric surgery is a non-covered benefit under the Harlan Freight Lines Employee Health Benefit Plan.",
     "required_role": "PHYSICIAN_REVIEWER",
     "state_licensing_flags": [],
-    "texas_ai_disclosure": null
+    "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
   },
   {
     "case_id": "PA-2609-8112",
@@ -270,7 +286,7 @@
     "clinical_rationale": "Request is not covered under the applicable plan terms. Physical therapy request (26 visits used + 8 requested = 34) exceeds the annual benefit limit of 30 visits under SPD-HARLAN Section 4.2.",
     "required_role": "PHYSICIAN_REVIEWER",
     "state_licensing_flags": [],
-    "texas_ai_disclosure": null
+    "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
   },
   {
     "case_id": "PA-2609-8114",
@@ -318,9 +334,14 @@
         "criterion": "Pre-op psychological evaluation clearing member for surgery.",
         "status": "MET",
         "clinical_evidence": "Psychological evaluation completed; cleared for surgery."
+      },
+      {
+        "criterion": "Participation in a physician-supervised weight management program for 6 months.",
+        "status": "NOT_MET",
+        "clinical_evidence": "Participated in physician-supervised weight management program for 0 months; did not enroll."
       }
     ],
-    "clinical_rationale": "The patient meets the BMI requirement and has a comorbidity of type 2 diabetes, which satisfies the first criterion. However, the patient has not participated in a physician-supervised weight management program for the required duration, which is a critical component of medical necessity for bariatric surgery. Therefore, the request is denied based on insufficient conservative therapy duration.",
+    "clinical_rationale": "The patient meets the BMI and psychological evaluation criteria for bariatric surgery. However, the patient did not participate in a physician-supervised weight management program for the required duration, which is a critical component of the medical necessity criteria. Therefore, the request is denied based on insufficient compliance with the governing policy.",
     "required_role": "PHYSICIAN_REVIEWER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -341,7 +362,7 @@
         "clinical_evidence": "Psych eval: cleared for SCS"
       }
     ],
-    "clinical_rationale": "The patient has documented intractable neuropathic leg pain for 12 months, having failed multiple conservative therapies including physical therapy, injections, and medications. Additionally, the psychological evaluation has been completed and cleared, meeting all necessary criteria for the spinal cord stimulator trial.",
+    "clinical_rationale": "The patient has documented intractable neuropathic leg pain for 12 months, having failed conservative therapies including physical therapy, injections, and medications. Additionally, the psychological evaluation has been completed and cleared, meeting all necessary criteria for the spinal cord stimulator trial.",
     "required_role": "NURSE_APPROVER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -362,7 +383,7 @@
         "clinical_evidence": "External photographs attached."
       }
     ],
-    "clinical_rationale": "The patient does not meet the required visual field loss criterion of 30 degrees or more, as the documented superior field loss is only 18 degrees. Although external photographs are provided, the primary medical necessity criterion for the procedure is not satisfied.",
+    "clinical_rationale": "The patient does not meet the required visual field loss criterion of 30 degrees or more, as the documented superior field loss is only 18 degrees. Although external photographs are provided, the primary medical necessity criterion is not satisfied.",
     "required_role": "PHYSICIAN_REVIEWER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -380,7 +401,7 @@
       {
         "criterion": "Pre-test genetic counseling completed",
         "status": "MISSING_DOCUMENTATION",
-        "clinical_evidence": "No documentation of pre-test genetic counseling provided."
+        "clinical_evidence": "Pre-test genetic counseling status not provided."
       }
     ],
     "clinical_rationale": "The patient has a documented family history of a sister with a pathogenic BRCA2 variant, which meets the criteria for genetic testing. However, there is no documentation confirming that pre-test genetic counseling has been completed, necessitating a request for additional information.",
@@ -461,7 +482,7 @@
         "clinical_evidence": "X-ray: Kellgren-Lawrence grade 4."
       }
     ],
-    "clinical_rationale": "The request for arthroscopic knee surgery does not meet medical necessity criteria as the patient does not exhibit mechanical symptoms and the MRI shows no discrete meniscal tear. Additionally, the presence of Kellgren-Lawrence grade 4 osteoarthritis further disqualifies the patient from meeting the criteria for surgery.",
+    "clinical_rationale": "The request for arthroscopic knee surgery does not meet medical necessity criteria as the patient has no mechanical symptoms and the MRI shows no discrete meniscal tear. Additionally, the presence of advanced osteoarthritis (Kellgren-Lawrence grade 4) further disqualifies the request.",
     "required_role": "PHYSICIAN_REVIEWER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -479,8 +500,10 @@
     ],
     "clinical_rationale": "The patient has documented radicular pain radiating down the left leg and has undergone 8 weeks of physical therapy and medication without adequate relief. This meets the criteria for advanced imaging as the patient has persistent symptoms despite conservative treatment.",
     "required_role": "NURSE_APPROVER",
-    "state_licensing_flags": [],
-    "texas_ai_disclosure": null
+    "state_licensing_flags": [
+      "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
+    ],
+    "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
   },
   {
     "case_id": "PA-2609-8126",
@@ -493,12 +516,12 @@
         "clinical_evidence": "Dx: type 2 diabetes mellitus (E11.65)"
       },
       {
-        "criterion": "treatment with insulin of any type or frequency",
+        "criterion": "Treatment with insulin of any type or frequency",
         "status": "MET",
         "clinical_evidence": "Current regimen: insulin glargine 28 units nightly"
       }
     ],
-    "clinical_rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a Continuous Glucose Monitor (CGM). Both required criteria are satisfied based on the provided clinical documentation.",
+    "clinical_rationale": "The patient has a diagnosis of type 2 diabetes mellitus and is being treated with insulin glargine, which meets the criteria for coverage of a Continuous Glucose Monitor (CGM). Both governing criteria are satisfied, warranting approval for the requested CGM system and sensors.",
     "required_role": "NURSE_APPROVER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
@@ -515,11 +538,11 @@
       },
       {
         "criterion": "Non-diagnostic initial stress test or inability to exercise",
-        "status": "MISSING_DOCUMENTATION",
-        "clinical_evidence": "No information provided regarding initial stress test results or exercise capability."
+        "status": "NOT_MET",
+        "clinical_evidence": "No mention of initial stress test results or exercise capability."
       }
     ],
-    "clinical_rationale": "The patient presents with exertional chest pressure for 2 months and has an intermediate pre-test probability of CAD, satisfying the first criterion for CCTA. However, documentation regarding a non-diagnostic initial stress test or inability to exercise is missing, which is necessary for full compliance with the criteria.",
+    "clinical_rationale": "The patient has exertional chest pressure for 2 months and an intermediate pre-test probability of CAD, which meets the criteria for coronary CT angiography. However, there is no documentation regarding a non-diagnostic initial stress test or the patient's ability to exercise, which is necessary for full compliance with the criteria.",
     "required_role": "NURSE_APPROVER",
     "state_licensing_flags": [],
     "texas_ai_disclosure": null
