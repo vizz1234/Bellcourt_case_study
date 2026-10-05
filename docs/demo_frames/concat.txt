@@ -1,0 +1,13 @@
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/overview.png'
+duration 4
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/case_PA-2609-00001.png'
+duration 4
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/case_PA-2609-00007.png'
+duration 4
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/case_PA-2609-00004.png'
+duration 4
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/case_PA-2609-00018.png'
+duration 4
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/case_PA-2609-00021.png'
+duration 4
+file '/Users/vizzdd/Documents/FDE/Bellcourt_Data_Pack/Bellcourt_case_study/docs/demo_frames/case_PA-2609-00021.png'

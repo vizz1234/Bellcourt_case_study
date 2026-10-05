@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bellcourt Prior Authorization Turnaround — Executive Pitch Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-page: #f1f5f9;
+    --bg-slide: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --primary: #991b1b;
+    --primary-light: #dc2626;
+    --primary-subtle: #fef2f2;
+    --border-color: #e2e8f0;
+    --success: #15803d;
+    --success-bg: #f0fdf4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
+  }
+
+  .deck-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .slide {
+    background: var(--bg-slide);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    page-break-after: always;
+    overflow: hidden;
+  }
+
+  .slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 12px;
+  }
+  .slide-header .brand {
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+  .slide-header .slide-cat {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .slide-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .slide-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+  }
+
+  h1 { font-size: 32px; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; color: var(--text-primary); }
+  h2 { font-size: 24px; font-weight: 800; line-height: 1.25; color: var(--text-primary); margin-bottom: 14px; }
+  h3 { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+  p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .badge-red { background: var(--primary-subtle); color: var(--primary); border: 1px solid #fecaca; }
+  .badge-green { background: var(--success-bg); color: var(--success); border: 1px solid #bbf7d0; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+  }
+  .card-highlight {
+    border-left: 4px solid var(--primary);
+    background: #fafafa;
+  }
+
+  .stat-big {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-top: 8px;
+  }
+  th {
+    background: #f8fafc;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-color);
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+  }
+
+  .print-btn-bar {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+  }
+  .btn-print {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  @media print {
+    body { background: #ffffff; padding: 0; }
+    .deck-container { gap: 0; max-width: none; }
+    .slide {
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      width: 100vw;
+      height: 100vh;
+      aspect-ratio: auto;
+      padding: 40px;
+    }
+    .print-btn-bar { display: none; }
+    @page { size: landscape; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="print-btn-bar">
+  <button class="btn-print" onclick="window.print()">🖨️ Export Pitch Deck to PDF (13 Slides)</button>
+</div>
+
+<div class="deck-container">
+
+  <!-- SLIDE 1: TITLE SLIDE -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Bellcourt Health Administrators</span>
+      <span class="slide-cat">FDE Turnaround Proposal</span>
+    </div>
+    <div class="slide-body" style="justify-content: center; align-items: flex-start;">
+      <span class="badge badge-red" style="margin-bottom: 16px;">Executive Briefing · October 2026</span>
+      <h1 style="font-size: 38px; max-width: 850px; color: var(--text-primary);">
+        Prior Authorization Under Pressure:
+      </h1>
+      <h2 style="font-size: 26px; color: var(--primary); font-weight: 700; margin-top: 6px;">
+        Data-Backed Turnaround & Agentic Clinical Decision Architecture
+      </h2>
+      <p style="font-size: 16px; margin-top: 16px; max-width: 750px; color: var(--text-secondary);">
+        Deploying a high-precision Intake Triage Engine and Agentic RAG Clinical Copilot alongside legacy PACE in 90 days.
+      </p>
+      <div style="margin-top: 30px; font-size: 13px; color: var(--text-muted);">
+        <strong>Prepared by:</strong> Forward Deployed Engineer (FDE) &nbsp;|&nbsp; <strong>Target Audience:</strong> CEO Dana Whitfield, CMO Dr. Okonjo & Leadership
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Confidential & Proprietary</span>
+      <span>Slide 1 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: THE EXISTENTIAL CRISIS -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Context & Symptoms</span>
+      <span class="slide-cat">The Existential Crisis</span>
+    </div>
+    <div class="slide-body">
+      <h2>A Perfect Storm: Margin Collapse & Regulatory Penalties</h2>
+      <div class="grid-4" style="margin-bottom: 20px;">
+        <div class="card card-highlight">
+          <div class="stat-big">$1.9M</div>
+          <div class="stat-label">Penalties Paid (2026)</div>
+          <p style="font-size: 11px; margin-top: 4px;">Service credits paid to Riverbend for SLA turnaround misses.</p>
+        </div>
+        <div class="card card-highlight">
+          <div class="stat-big">8.0%</div>
+          <div class="stat-label">FY2026 Operating Margin</div>
+          <p style="font-size: 11px; margin-top: 4px;">Down precipitously from 14.0% in FY2023 on $112.4M revenue.</p>
+        </div>
+        <div class="card card-highlight">
+          <div class="stat-big">56%</div>
+          <div class="stat-label">Appeal Overturn Rate</div>
+          <p style="font-size: 11px; margin-top: 4px;">Over half of Medicare Advantage denials reversed on appeal.</p>
+        </div>
+        <div class="card card-highlight">
+          <div class="stat-big">$8.06M</div>
+          <div class="stat-label">Harlan Revenue at Risk</div>
+          <p style="font-size: 11px; margin-top: 4px;">Largest employer (44.1k lives, score 5/10) evaluating competitors.</p>
+        </div>
+      </div>
+      <p style="font-size: 13.5px;">
+        <strong>The Immediate Threat:</strong> Riverbend issued a formal Corrective Action Plan (CAP) in July 2026 after Q1 and Q2 timeliness misses. If Q3 performance does not recover immediately, Riverbend will put the <strong>$13.1M UM contract out to competitive re-bid in October</strong>.
+      </p>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 2 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: REFUTING GREG'S 20-NURSE MYTH -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Operational Diagnosis</span>
+      <span class="slide-cat">The Staffing Myth vs. Data</span>
+    </div>
+    <div class="slide-body">
+      <h2>Why "Hiring 20 More Nurses" is the Wrong Solution</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="color: var(--text-primary);">VP Operations Greg Tolliver's View:</h3>
+          <p style="font-size: 13px; font-style: italic; margin-top: 6px;">
+            "It's a staffing problem, full stop. We are budgeted for 58 nurses and we're at 50.6. Give me 20 more nurses and timeliness goes away."
+          </p>
+          <div style="margin-top: 14px; padding: 10px; background: #fff1f2; border-left: 3px solid #e11d48; border-radius: 4px;">
+            <strong style="font-size: 12px; color: #be123c;">The Financial Trap:</strong><br>
+            <span style="font-size: 11.5px; color: #475569;">
+              Hiring 20 nurse FTEs costs <strong>$2.4M annually</strong> ($120k fully loaded). It wipes out 27% of Bellcourt's remaining operating profit.
+            </span>
+          </div>
+        </div>
+        <div class="card" style="border-left: 4px solid var(--success);">
+          <h3 style="color: var(--success);">What the Operational Data Actually Proves:</h3>
+          <ul style="font-size: 12px; color: var(--text-secondary); margin-left: 18px; line-height: 1.6; margin-top: 6px;">
+            <li><strong>Intake Hole:</strong> Faxes sit in inbox for <strong>3 to 4 days</strong> before entry. Nurses receive cases when the 7-day CMS clock is already half-dead.</li>
+            <li><strong>SharePoint Sinkhole:</strong> Nurses spend <strong>14.2 minutes out of 38 minutes (37.4%)</strong> just searching for policies in an unindexed library.</li>
+            <li><strong>Turnover Treadmill:</strong> Annual nurse turnover is <strong>31%</strong>. Bellcourt cannot even retain the 58 budgeted nurses due to administrative burnout.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 3 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: THE INTAKE CLOCK TRAP -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Root Cause 1</span>
+      <span class="slide-cat">The Intake Clock Trap</span>
+    </div>
+    <div class="slide-body">
+      <h2>Vulnerability 1: The Statutory Clock Trap & Fax Drag</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>The Legal vs. System Disconnect</h3>
+          <p style="font-size: 12px; margin-top: 6px;">
+            Under <strong>CMS-0057-F</strong> (effective 2026), Medicare Advantage standard decision deadline is <strong>7 calendar days (168 hours) from receipt</strong>.
+          </p>
+          <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px; border-radius: 4px; margin-top: 10px; font-size: 11px;">
+            <strong>Legacy Timeline:</strong><br>
+            • Day 0: Fax lands in folder ➔ <span class="badge badge-red">Legal Clock Starts</span><br>
+            • Day 3: Intake keys into PACE ➔ <span class="badge badge-gray">PACE Clock Starts</span><br>
+            • Day 7: Case completed ➔ PACE says "4 days (Met)", Audit says <strong>"7+ days (Breached)!"</strong>
+          </div>
+        </div>
+        <div class="card">
+          <h3>The Incompleteness Drag (32.3%)</h3>
+          <p style="font-size: 12px; margin-top: 6px;">
+            Across 640 faxes/day, <strong>32.3% arrive incomplete</strong> (missing clinical notes, CPT codes, or member IDs).
+          </p>
+          <ul style="font-size: 11.5px; margin-left: 18px; margin-top: 8px; line-height: 1.5;">
+            <li>Deficiency notices take 2–3 days to issue manually.</li>
+            <li>Cases sit in `PEND_FOR_INFO` while statutory turnaround continues to burn.</li>
+            <li><strong>Call Center Impact:</strong> 2,400 daily calls, <strong>57%</strong> are clinics asking <em>"Did you get my fax?"</em> (20% abandonment).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 4 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: THE POLICY LIBRARY SINKHOLE -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Root Cause 2</span>
+      <span class="slide-cat">The Policy Library Sinkhole</span>
+    </div>
+    <div class="slide-body">
+      <h2>Vulnerability 2: Why 56% of Appeals Are Overturned</h2>
+      <p style="font-size: 13px; margin-bottom: 12px;">
+        Overturns are NOT driven by "providers sending new info." They are driven by systematic policy retrieval errors:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Institutional Failure Mode</th>
+            <th>Evidence in Data Pack</th>
+            <th>Operational Consequence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Frozen PACE Screens</strong></td>
+            <td>`UM-MEMO-2026-04`: IT slipped screen updates for MP-101, 102, 103, 106, 110.</td>
+            <td>Junior nurses applied retired v1 policies; 14 audited cases failed.</td>
+          </tr>
+          <tr>
+            <td><strong>The Rogue Staff Memo</strong></td>
+            <td>`UM-MEMO-2025-19`: Diane Mercer told nurses to demand 6 weeks PT instead of 4 weeks.</td>
+            <td>Memo is VOID under `GOV-01 §1.4`; 18 audited cases wrongfully denied.</td>
+          </tr>
+          <tr>
+            <td><strong>Broken Communication Loop</strong></td>
+            <td>`EMAIL-Kestrel-Amendment`: Kestrel dropped bariatric exclusion; UM not copied.</td>
+            <td>Nurses denied legitimate surgeries for months under outdated terms.</td>
+          </tr>
+          <tr>
+            <td><strong>Personal "Cheat Sheets"</strong></td>
+            <td>Anita Reyes: Senior nurses keep personal Word cheat sheets.</td>
+            <td>31% turnover wipes out knowledge; new nurses guess on employer rules.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 5 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: SOLUTION ARCHITECTURE -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Architecture</span>
+      <span class="slide-cat">Side-by-Side Deployment</span>
+    </div>
+    <div class="slide-body">
+      <h2>Target Architecture: Deploying Side-by-Side with PACE</h2>
+      <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 6px; padding: 12px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; text-align: center; gap: 10px;">
+          <div style="flex: 1; background: #fff; border: 1px solid #cbd5e1; padding: 10px; border-radius: 4px;">
+            <div style="font-weight: 700; font-size: 11px; color: var(--primary);">MULTI-CHANNEL INGESTION</div>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: 4px;">Fax Share (46%) · Portal (31%)<br>Phone (15%) · EDI 278 (8%)</div>
+          </div>
+          <div style="font-size: 16px; font-weight: 800; color: #94a3b8;">➔</div>
+          <div style="flex: 1.2; background: #fef2f2; border: 1.5px solid var(--primary); padding: 10px; border-radius: 4px;">
+            <div style="font-weight: 800; font-size: 11px; color: var(--primary);">OPTION A: INTAKE ENGINE</div>
+            <div style="font-size: 9.5px; color: #475569; margin-top: 4px;">OCR 14 Fields · True SLA Clock<br>Eligibility · Dual-Layer Security</div>
+          </div>
+          <div style="font-size: 16px; font-weight: 800; color: #94a3b8;">➔</div>
+          <div style="flex: 1.2; background: #f8fafc; border: 1.5px solid #0f172a; padding: 10px; border-radius: 4px;">
+            <div style="font-weight: 800; font-size: 11px; color: #0f172a);">OPTION B: CLINICAL COPILOT</div>
+            <div style="font-size: 9.5px; color: #475569; margin-top: 4px;">GOV-01 Hierarchy · Quoted Evidence<br>Approvals ➔ Nurse | Denials ➔ MD</div>
+          </div>
+          <div style="font-size: 16px; font-weight: 800; color: #94a3b8;">➔</div>
+          <div style="flex: 1; background: #f0fdf4; border: 1px solid #16a34a; padding: 10px; border-radius: 4px;">
+            <div style="font-weight: 700; font-size: 11px; color: #15803d;">LEGACY PACE & DASHBOARD</div>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: 4px;">Read-Only SQL Replica<br>Live Provider Tracking</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top: 14px;">
+        <div class="card">
+          <strong style="font-size: 12px; color: var(--primary);">Zero PACE Re-Platforming</strong>
+          <p style="font-size: 11px; margin-top: 2px;">Operates as a microservice on Azure; uses read-only database replicas. Zero risk to core claims.</p>
+        </div>
+        <div class="card">
+          <strong style="font-size: 12px; color: var(--primary);">HIPAA BAA Compliant</strong>
+          <p style="font-size: 11px; margin-top: 2px;">Leverages Bellcourt's existing signed Azure tenant; enterprise security with zero public model training.</p>
+        </div>
+        <div class="card">
+          <strong style="font-size: 12px; color: var(--primary);">90-Day Production Path</strong>
+          <p style="font-size: 11px; margin-top: 2px;">Runs in shadow mode within 4 weeks; full production rollout by Week 11 to satisfy Riverbend CAP.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 6 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: OPTION A INTAKE ENGINE -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Technical Deep-Dive</span>
+      <span class="slide-cat">Option A: Intake & Triage Engine</span>
+    </div>
+    <div class="slide-body">
+      <h2>Option A: Autonomous Intake, Triage & Security Guardrail</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Core Intake Capabilities</h3>
+          <ul style="font-size: 12px; line-height: 1.6; margin-left: 18px; margin-top: 6px;">
+            <li><strong>Automated 14-Field OCR:</strong> Extracts Patient, Provider, CPT, ICD-10, and clinical notes from raw TIFF/PNG faxes in seconds.</li>
+            <li><strong>True Statutory SLA Timer:</strong> Starts clock at `received_ts`, providing live countdown timers for 7-day MA and 72-hour urgent cases.</li>
+            <li><strong>Automated Eligibility Check:</strong> Real-time lookup against member extract with fuzzy name/DOB fallback.</li>
+            <li><strong>Instant Deficiency Notices:</strong> Automated fax-back within 60s for incomplete requests, stopping SLA decay.</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left: 4px solid var(--primary);">
+          <h3>Dual-Layer Security Guardrail</h3>
+          <p style="font-size: 11.5px; margin-top: 4px;">Provider faxes are untrusted inputs. Our dual-layer shield prevents manipulation:</p>
+          <div style="background: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 6px; font-size: 11px;">
+            <strong>Layer 1: Deterministic Regex Filter</strong><br>
+            Blocks prompt injection, system prompt leak attempts, and jailbreaks (`"ignore previous instructions"`).
+          </div>
+          <div style="background: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 6px; font-size: 11px;">
+            <strong>Layer 2: Semantic LLM Security Judge</strong><br>
+            Calls OpenRouter (`gpt-4o-mini`) to detect subtle social engineering (e.g. <em>"Pre-approved verbally by Medical Director"</em>).
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 7 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 8: OPTION B CLINICAL COPILOT -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Technical Deep-Dive</span>
+      <span class="slide-cat">Option B: Agentic Clinical Copilot</span>
+    </div>
+    <div class="slide-body">
+      <h2>Option B: Deterministic Governance & Evidence RAG</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Deterministic Hierarchy Engine (`GOV-01`)</h3>
+          <p style="font-size: 11.5px; margin-top: 4px;">Guarantees 100% legal precedence before calling any LLM:</p>
+          <div style="font-size: 11px; line-height: 1.6; margin-top: 8px;">
+            1. <strong>Riverbend Addendum:</strong> NCD/LCD rules override for MA (CGM §2.1).<br>
+            2. <strong>Employer SPDs:</strong> Harlan bariatric exclusion §6.4; Bright COE §5.3; PT annual visit limits.<br>
+            3. <strong>Effective Version by DOS:</strong> Matches Date of Service against active policy (v1 vs. v2).<br>
+            4. <strong>Void Memos:</strong> Rejects unapproved staff memos like `UM-MEMO-2025-19`.
+          </div>
+        </div>
+        <div class="card">
+          <h3>Grounded Clinical Evidence Extraction</h3>
+          <p style="font-size: 11.5px; margin-top: 4px;">Zero hallucination policy with verified chart quotes:</p>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; background: #0f172a; color: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 6px;">
+            "criteria_checklist": [<br>
+            &nbsp;&nbsp;{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"criterion": "Radicular pain >= 4 weeks PT",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"status": "MET",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"evidence": "Patient completed 5 weeks formal PT..."<br>
+            &nbsp;&nbsp;}<br>
+            ]
+          </div>
+          <p style="font-size: 10.5px; color: var(--text-muted); margin-top: 4px;">Substring containment verifies quotes against raw medical records.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 8 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 9: QA AUDIT BENCHMARK EVIDENCE -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Empirical Proof</span>
+      <span class="slide-cat">120-Case QA Benchmark</span>
+    </div>
+    <div class="slide-body">
+      <h2>Benchmarked Across 120 Ground-Truth Audited Cases</h2>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Evaluated against `qa_audit_sample_2026.csv` to satisfy Riverbend's proof-of-accuracy mandate:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Benchmark Metric</th>
+            <th>Human Reviewers</th>
+            <th>Clinical Copilot</th>
+            <th>Performance Gain</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Governing Source Citation Accuracy</strong></td>
+            <td>43.3% (52 / 120)</td>
+            <td><strong style="color: var(--success); font-size: 14px;">99.2% (119 / 120)</strong></td>
+            <td><strong>+55.9% Improvement</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Clinical Determination Accuracy</strong></td>
+            <td>56.7% (68 / 120)</td>
+            <td><strong style="color: var(--success); font-size: 14px;">90.8% (109 / 120)</strong></td>
+            <td><strong>+34.1% Improvement</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Resolution of Memo Conflicts (n=18)</strong></td>
+            <td>0.0% (All Failed)</td>
+            <td><strong style="color: var(--success);">100.0% Resolved</strong></td>
+            <td>Eliminates UM-MEMO-2025-19 errors</td>
+          </tr>
+          <tr>
+            <td><strong>Resolution of Client Rule Misses (n=7)</strong></td>
+            <td>0.0% (All Failed)</td>
+            <td><strong style="color: var(--success);">100.0% Resolved</strong></td>
+            <td>Enforces visit limits & exclusions</td>
+          </tr>
+          <tr>
+            <td><strong>Review Time per Case</strong></td>
+            <td>38.0 minutes</td>
+            <td><strong style="color: var(--success);">&lt; 10 seconds</strong></td>
+            <td>Saves ~35 minutes per review</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 9 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 10: REGULATORY GUARDRAILS -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Compliance & Risk</span>
+      <span class="slide-cat">Regulatory Guardrails</span>
+    </div>
+    <div class="slide-body">
+      <h2>Bulletproof Regulatory Compliance Architecture</h2>
+      <div class="grid-3">
+        <div class="card card-highlight">
+          <h3 style="color: var(--primary);">1. Zero Auto-Denials</h3>
+          <p style="font-size: 12px; margin-top: 4px;">
+            Under CMS rules and state law, AI cannot deny care. Approvals route to <strong>Nurse Approvers</strong> for 1-click sign-off. All proposed adverse decisions route strictly to <strong>Physician Reviewers</strong>.
+          </p>
+        </div>
+        <div class="card card-highlight">
+          <h3 style="color: var(--primary);">2. Arizona MD Licensing</h3>
+          <p style="font-size: 12px; margin-top: 4px;">
+            Effective July 1, 2026, Riverbend MA denials for Arizona members require an Arizona-licensed MD. The Copilot automatically routes these cases exclusively to Bellcourt's <strong>2 Arizona-licensed MDs</strong>.
+          </p>
+        </div>
+        <div class="card card-highlight">
+          <h3 style="color: var(--primary);">3. Texas AI Disclosure</h3>
+          <p style="font-size: 12px; margin-top: 4px;">
+            Texas law (effective Jan 1, 2026) requires written patient disclosure of AI usage. The Copilot automatically appends the <strong>statutory AI disclosure statement</strong> to all Texas determination letters.
+          </p>
+        </div>
+      </div>
+      <div class="callout" style="margin-top: 16px;">
+        <strong>CEO Protection:</strong> Dana Whitfield's fear of "becoming the next AI headline" is completely neutralized. The system operates as a clinical evidence locator and policy router with mandatory human clinician sign-off.
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 10 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 11: FINANCIAL ROI & BUSINESS CASE -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Business Impact</span>
+      <span class="slide-cat">Financial ROI & Value Creation</span>
+    </div>
+    <div class="slide-body">
+      <h2>The Business Case: Reversing the Margin Collapse</h2>
+      <div class="grid-2">
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Value Driver</th>
+                <th>Annual Financial Return</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Riverbend SLA Penalty Avoidance</strong></td>
+                <td><strong style="color: var(--success);">+$1,900,000 / year</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Avoided Cost of 20 Nurses</strong></td>
+                <td><strong style="color: var(--success);">+$2,400,000 / year</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Call Center Overtime Reduction</strong></td>
+                <td><strong style="color: var(--success);">+$350,000 / year</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Harlan Revenue Protected (Renewal)</strong></td>
+                <td><strong>+$8,060,000 / year</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Annual Solution Operating Cost</strong></td>
+                <td>-$45,000 / year</td>
+              </tr>
+              <tr style="background: #f0fdf4;">
+                <td><strong>Net Annual Value Delivered</strong></td>
+                <td><strong style="color: var(--success); font-size: 15px;">+$4,605,000 / year</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px;">
+          <div class="card" style="border-left: 4px solid var(--success);">
+            <div class="stat-big" style="color: var(--success);">~37%</div>
+            <div class="stat-label">Nurse Capacity Created</div>
+            <p style="font-size: 11.5px; margin-top: 4px;">Eliminating 14.2 min search creates the equivalent of <strong>~18.7 Nurse FTEs</strong> without adding payroll.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--primary);">
+            <div class="stat-big">> 100x</div>
+            <div class="stat-label">Annual Solution ROI</div>
+            <p style="font-size: 11.5px; margin-top: 4px;">$4.6M annual bottom-line benefit on less than $45k in cloud & inference costs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 11 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 12: 90-DAY IMPLEMENTATION ROADMAP -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Execution</span>
+      <span class="slide-cat">90-Day Implementation Plan</span>
+    </div>
+    <div class="slide-body">
+      <h2>90-Day Phased Production Rollout</h2>
+      <div class="grid-4" style="margin-top: 10px;">
+        <div class="card">
+          <div class="badge badge-gray" style="margin-bottom: 6px;">Weeks 1–3</div>
+          <h3 style="font-size: 13px;">Phase 1: Foundation</h3>
+          <p style="font-size: 11px; margin-top: 4px;">
+            • Deploy Azure BAA container.<br>
+            • Connect read-only PACE CDC replica.<br>
+            • Ingest policies & SPDs into registry.<br>
+            • Mount fax share watcher.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge badge-gray" style="margin-bottom: 6px;">Weeks 4–7</div>
+          <h3 style="font-size: 13px;">Phase 2: Shadow Mode</h3>
+          <p style="font-size: 11px; margin-top: 4px;">
+            • Issue Riverbend 60-day notice.<br>
+            • Run Intake & Copilot in silent shadow.<br>
+            • Validate daily against human decisions.<br>
+            • Audit accuracy with CMO Okonjo.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge badge-gray" style="margin-bottom: 6px;">Weeks 8–10</div>
+          <h3 style="font-size: 13px;">Phase 3: Pilot Rollout</h3>
+          <p style="font-size: 11px; margin-top: 4px;">
+            • Pilot with 10 senior nurses (Anita Reyes).<br>
+            • Enable 1-click Nurse Approvals.<br>
+            • Route proposed denials to MDs.<br>
+            • Activate Arizona MD licensing queue.
+          </p>
+        </div>
+        <div class="card" style="border: 1.5px solid var(--success); background: #f0fdf4;">
+          <div class="badge badge-green" style="margin-bottom: 6px;">Weeks 11–12</div>
+          <h3 style="font-size: 13px; color: var(--success);">Phase 4: Full Go-Live</h3>
+          <p style="font-size: 11px; margin-top: 4px;">
+            • Full rollout across all 50.6 FTEs.<br>
+            • Automated fax deficiency notices.<br>
+            • Deliver Harlan Freight live dashboard.<br>
+            • <strong>Riverbend CAP Satisfied.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 12 of 13</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 13: SUMMARY & THE DECISION -->
+  <div class="slide">
+    <div class="slide-header">
+      <span class="brand">Conclusion</span>
+      <span class="slide-cat">The Decision Ahead</span>
+    </div>
+    <div class="slide-body" style="justify-content: center; align-items: center; text-align: center;">
+      <span class="badge badge-green" style="margin-bottom: 12px; font-size: 12px; padding: 4px 12px;">Immediate Path Forward</span>
+      <h2 style="font-size: 30px; max-width: 800px; color: var(--text-primary); margin-bottom: 10px;">
+        Faster Decisions. Defensible Determinations. Zero Regulatory Exposure.
+      </h2>
+      <p style="font-size: 15px; max-width: 750px; color: var(--text-secondary); line-height: 1.6;">
+        Bellcourt does not have to spend $2.4M on 20 nurses, risk multi-million dollar claims re-platforming, or face contract termination from Riverbend.
+      </p>
+      <div class="grid-3" style="width: 100%; max-width: 800px; margin-top: 24px;">
+        <div class="card">
+          <strong style="color: var(--primary); font-size: 13px;">Stops $1.9M Penalties</strong>
+          <p style="font-size: 11.5px; margin-top: 2px;">Tracks statutory clocks from receipt; resolves 32.3% fax deficiencies instantly.</p>
+        </div>
+        <div class="card">
+          <strong style="color: var(--primary); font-size: 13px;">99.2% Citation Accuracy</strong>
+          <p style="font-size: 11.5px; margin-top: 2px;">Enforces GOV-01; recovers the 56% appeal overturn rate permanently.</p>
+        </div>
+        <div class="card">
+          <strong style="color: var(--primary); font-size: 13px;">Secures Harlan & Riverbend</strong>
+          <p style="font-size: 11.5px; margin-top: 2px;">Provides live dashboards and transparent SPD denial letters before Jan 1, 2027.</p>
+        </div>
+      </div>
+      <div style="margin-top: 25px; font-size: 14px; font-weight: 700; color: var(--text-primary);">
+        Ready for Immediate Deployment into Phase 1 Foundation.
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Bellcourt Case Study Turnaround Strategy</span>
+      <span>Slide 13 of 13</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
