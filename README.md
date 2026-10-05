@@ -1,6 +1,7 @@
 # Bellcourt Health Administrators: Prior Authorization Intelligence Platform
 
-> **Role:** Forward Deployed Engineer (FDE) Case Study & Production Turnaround  
+> **FDE Engagement Lead:** Vishwanath D Doddamani  
+> **Role:** Forward Deployed Engineer (FDE) Turnaround Strategy & Production Architecture  
 > **Repository:** [https://github.com/vizz1234/Bellcourt_case_study.git](https://github.com/vizz1234/Bellcourt_case_study.git)  
 > **Deployment Target:** 90-Day Deployable Sidecar Architecture alongside Legacy PACE (SQL Server 2012)  
 > **Client Types:** 38 Self-Funded Employers (453k lives) + Riverbend Health Plan (154k MA/ACA lives)
@@ -11,9 +12,9 @@
 
 | Deliverable | Description | Location / Artifact |
 | :--- | :--- | :--- |
-| 📄 **Master Documentation** | Complete 6-page A4 business & technical report (diagnosis, priorities, architecture, compliance, ROI). | [`docs/case_study_report.pdf`](docs/case_study_report.pdf) <br> [`docs/case_study_report.html`](docs/case_study_report.html) |
+| 📄 **Master Documentation** | Complete 8-page A4 business & technical report (diagnosis, priorities, architecture, compliance, ROI). | [`docs/case_study_report.pdf`](docs/case_study_report.pdf) <br> [`docs/case_study_report.html`](docs/case_study_report.html) |
 | 🎤 **Executive Pitch Deck** | 13-slide executive presentation in 16:9 landscape format (white, red, black theme). | [`docs/pitch_deck.pdf`](docs/pitch_deck.pdf) <br> [`docs/pitch_deck.html`](docs/pitch_deck.html) |
-| 🎥 **Working Demo Video** | Full 28-second walkthrough demonstrating intake triage, adversarial guardrail, and clinical copilot. | [`docs/bellcourt_demo_walkthrough.mp4`](docs/bellcourt_demo_walkthrough.mp4) <br> [`docs/bellcourt_demo_walkthrough.webp`](docs/bellcourt_demo_walkthrough.webp) |
+| 🎥 **Working Demo Video** | Full 1m 19s interactive walkthrough demonstrating live search, adversarial guardrail defense, clinical copilot checklist, and licensing gates. | [`docs/bellcourt_demo_walkthrough.mp4`](docs/bellcourt_demo_walkthrough.mp4) <br> [`docs/bellcourt_demo_walkthrough.webp`](docs/bellcourt_demo_walkthrough.webp) |
 | 💻 **Interactive UI Dashboard** | Standalone production interface for intake queues, true SLA countdowns, and clinical review. | [`app/dashboard_standalone.html`](app/dashboard_standalone.html) |
 | 🧪 **QA Benchmark Report** | Empirical evaluation across all 120 QA audit ground-truth cases. | [`output/qa_benchmark_report.md`](output/qa_benchmark_report.md) |
 
