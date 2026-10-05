@@ -3,6 +3,7 @@
 > **FDE Engagement Lead:** Vishwanath D Doddamani  
 > **Role:** Forward Deployed Engineer (FDE) Turnaround Strategy & Production Architecture  
 > **Repository:** [https://github.com/vizz1234/Bellcourt_case_study.git](https://github.com/vizz1234/Bellcourt_case_study.git)  
+> **Live Demo (Zero Setup Required):** [https://vizz1234.github.io/Bellcourt_case_study/](https://vizz1234.github.io/Bellcourt_case_study/)  
 > **Deployment Target:** 90-Day Deployable Sidecar Architecture alongside Legacy PACE (SQL Server 2012)  
 > **Client Types:** 38 Self-Funded Employers (453k lives) + Riverbend Health Plan (154k MA/ACA lives)
 
@@ -12,22 +13,29 @@
 
 | Deliverable | Description | Location / Artifact |
 | :--- | :--- | :--- |
+| 🌐 **Live Web Demo** | Interactive production dashboard with live search, guardrails, criteria checklists (no setup needed). | [**Live Demo URL**](https://vizz1234.github.io/Bellcourt_case_study/) |
 | 📄 **Master Documentation** | Complete 8-page A4 business & technical report (diagnosis, priorities, architecture, compliance, ROI). | [`docs/case_study_report.pdf`](docs/case_study_report.pdf) <br> [`docs/case_study_report.html`](docs/case_study_report.html) |
 | 🎤 **Executive Pitch Deck** | 13-slide executive presentation in 16:9 landscape format (white, red, black theme). | [`docs/pitch_deck.pdf`](docs/pitch_deck.pdf) <br> [`docs/pitch_deck.html`](docs/pitch_deck.html) |
 | 🎥 **Working Demo Video** | Full 1m 19s interactive walkthrough demonstrating live search, adversarial guardrail defense, clinical copilot checklist, and licensing gates. | [`docs/bellcourt_demo_walkthrough.mp4`](docs/bellcourt_demo_walkthrough.mp4) <br> [`docs/bellcourt_demo_walkthrough.webp`](docs/bellcourt_demo_walkthrough.webp) |
+| ✅ **Evidence & QA Benchmark** | Empirical validation across 120 QA audit cases, adversarial tests, and live queue. | [`docs/EVIDENCE.md`](docs/EVIDENCE.md) <br> [`output/qa_benchmark_report.md`](output/qa_benchmark_report.md) |
 | 💻 **Interactive UI Dashboard** | Standalone production interface for intake queues, true SLA countdowns, and clinical review. | [`app/dashboard_standalone.html`](app/dashboard_standalone.html) |
-| 🧪 **QA Benchmark Report** | Empirical evaluation across all 120 QA audit ground-truth cases. | [`output/qa_benchmark_report.md`](output/qa_benchmark_report.md) |
 
 ---
 
 ## 1. Problem Context & Root Cause Diagnosis
 
 Bellcourt Health Administrators entered FY2026 under an acute financial and operational crisis:
-1. **$1.9M SLA Penalties Paid in 2026:** Under **CMS-0057-F**, Medicare Advantage (MA) standard turnaround is **7 calendar days (168h) from receipt**. Legacy PACE recorded turnaround starting from *manual keying* (3–4 days late), masking backlog decay and dropping real compliance to ~90% against Riverbend's 97% contractual threshold.
-2. **Intake Drag:** ~46% of requests arrive via paper fax (~640 faxes/day). **32.3% of faxes arrive incomplete**, sitting in queue for days before manual outreach.
-3. **Clinical Review Sinkhole (38 min/case):** Nurses spend **14.2 minutes (37.4%)** searching across 1,100 unindexed PDFs in SharePoint.
-4. **56% Appeal Overturn Rate:** Driven by frozen PACE screens (`UM-MEMO-2026-04`), unapproved staff memos (`UM-MEMO-2025-19`), and missed employer benefit visit limits.
-5. **Existential Churn Risk:** Riverbend issued a formal Corrective Action Plan (CAP) in July 2026 with a contract re-bid threat; Bellcourt's largest employer, **Harlan Freight Lines** ($8.06M annual PEPM revenue, 44,100 lives), is evaluating competitors due to opaque reporting and vague denial letters.
+
+1. **Nurses Were Using the Wrong Rulebook (39 of 120 checked cases):**
+   Staff followed obsolete policies or informal memos (`UM-MEMO-2025-19`, `UM-MEMO-2026-04`) instead of governing clinical criteria. **Wrong-rulebook denials were reversed on appeal 18 out of 21 times**, driving a disastrous 56% appeal overturn rate.
+2. **Requests Arrived Incomplete, and Nobody Noticed Until It Was Too Late:**
+   **66 of 67 late cases** arrived missing critical information (NPI, DOB, clinical chart notes). Incomplete faxes sat in queues for **~5 days** before staff performed manual outreach, blowing CMS-0057-F statutory timers.
+3. **The Staffing Fallacy (Hiring 20 Nurses Will Not Fix It):**
+   When nurse staffing fluctuated by 17% between Q1 (50.6 FTEs) and Q2 (42.1 FTEs), turnaround compliance remained flat at ~91%. Spending $2.4M on 20 nurses cannot fix a 1,100-PDF unindexed SharePoint search sinkhole (14.2 min/case) or conflicting policy versions.
+4. **$1.9M SLA Penalties Paid in 2026:**
+   CMS-0057-F mandates Medicare Advantage (MA) turnaround within **7 calendar days (168h) from receipt**. Legacy PACE started the clock only when clerks keyed the case (3–4 days late), masking backlog decay and triggering Riverbend's Corrective Action Plan (CAP).
+5. **Existential Churn Risk:**
+   Riverbend threatened an open contract re-bid in October 2026; Bellcourt's largest self-funded employer, **Harlan Freight Lines** ($8.06M annual PEPM revenue, 44,100 lives), is actively evaluating competitor TPAs due to opaque reporting and clumsy denial letters.
 
 ---
 
