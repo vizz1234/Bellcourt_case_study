@@ -631,7 +631,9 @@
             <th>Member ID</th>
             <th>Service Requested</th>
             <th>Triage Status</th>
-            <th>SLA Deadline</th>
+            <th onclick="toggleSlaSort()" style="cursor: pointer; user-select: none; white-space: nowrap;" title="Click to sort by statutory SLA deadline (Earliest vs. Latest)">
+              SLA Deadline &nbsp;<span id="sort-arrow" style="display:inline-flex; align-items:center; gap:3px; font-size:11px; font-weight:600; color:#38bdf8; background:rgba(56,189,248,0.15); padding:2px 7px; border-radius:4px; border:1px solid rgba(56,189,248,0.3); transition:all 0.15s ease;">▲ Earliest</span>
+            </th>
           </tr>
         </thead>
         <tbody id="case-table-body">
@@ -658,6 +660,7 @@
     let casesData = [];
     let currentFilter = 'ALL';
     let searchQuery = '';
+    let slaSortOrder = 'ASC'; // 'ASC' (earliest deadline first), 'DESC' (latest deadline first)
 
     // Load Triaged JSON Data
     async function loadData() {
@@ -670,6 +673,28 @@
         // Fallback placeholder will trigger if fetch fails
       }
       renderTable();
+    }
+
+    function toggleSlaSort() {
+      slaSortOrder = (slaSortOrder === 'ASC') ? 'DESC' : 'ASC';
+      updateSortIndicator();
+      renderTable();
+    }
+
+    function updateSortIndicator() {
+      const arrow = document.getElementById('sort-arrow');
+      if (!arrow) return;
+      if (slaSortOrder === 'ASC') {
+        arrow.innerHTML = '▲ Earliest';
+        arrow.style.color = '#38bdf8';
+        arrow.style.borderColor = 'rgba(56,189,248,0.3)';
+        arrow.style.background = 'rgba(56,189,248,0.15)';
+      } else {
+        arrow.innerHTML = '▼ Latest';
+        arrow.style.color = '#a78bfa';
+        arrow.style.borderColor = 'rgba(167,139,250,0.3)';
+        arrow.style.background = 'rgba(167,139,250,0.15)';
+      }
     }
 
     function setFilter(filter) {
@@ -707,6 +732,18 @@
         return true;
       });
 
+      if (slaSortOrder) {
+        filtered.sort((a, b) => {
+          const tsA = (a.sla_tracking && a.sla_tracking.deadline_ts) 
+            ? new Date(a.sla_tracking.deadline_ts.replace(' ', 'T')).getTime() 
+            : Infinity;
+          const tsB = (b.sla_tracking && b.sla_tracking.deadline_ts) 
+            ? new Date(b.sla_tracking.deadline_ts.replace(' ', 'T')).getTime() 
+            : Infinity;
+          return slaSortOrder === 'ASC' ? tsA - tsB : tsB - tsA;
+        });
+      }
+
       filtered.forEach(c => {
         const tr = document.createElement('tr');
         tr.onclick = () => openModal(c);
@@ -740,7 +777,18 @@
             ${c.service_requested || c.service_code || 'N/A'}
           </td>
           <td><span class="status-badge ${statusClass}">${statusLabel}</span></td>
-          <td class="sla-timer">${c.sla_tracking ? c.sla_tracking.deadline_ts : 'N/A'}</td>
+          <td class="sla-timer" style="white-space: nowrap;">
+            <div style="font-family:'JetBrains Mono', monospace; font-weight:600; font-size:12px; color:#f1f5f9;">
+              ${c.sla_tracking ? c.sla_tracking.deadline_ts : 'N/A'}
+            </div>
+            ${c.sla_tracking ? `
+              <div style="font-size:11px; margin-top:3px; display:flex; gap:6px; align-items:center;">
+                <span style="color:var(--text-dim);">Elapsed: <strong style="color:#94a3b8; font-weight:600;">${c.sla_tracking.hours_elapsed !== undefined ? c.sla_tracking.hours_elapsed + 'h' : '--'}</strong></span>
+                <span style="color:rgba(255,255,255,0.25);">&bull;</span>
+                <span style="color:${c.sla_tracking.hours_remaining < 24 ? '#fb7185' : '#34d399'}; font-weight:600;">Rem: ${c.sla_tracking.hours_remaining !== undefined ? c.sla_tracking.hours_remaining + 'h' : '--'}</span>
+              </div>
+            ` : ''}
+          </td>
         `;
         tbody.appendChild(tr);
       });
@@ -849,6 +897,15 @@
           <div class="detail-item">
             <label>Statutory SLA Deadline</label>
             <span style="font-family:'JetBrains Mono'; color:#38bdf8;">${c.sla_tracking ? c.sla_tracking.deadline_ts : 'N/A'}</span>
+          </div>
+          <div class="detail-item">
+            <label>Elapsed &amp; Remaining Time</label>
+            <span style="font-family:'JetBrains Mono'; font-size:13px;">
+              ${c.sla_tracking ? `
+                <span style="color:#94a3b8;">${c.sla_tracking.hours_elapsed !== undefined ? c.sla_tracking.hours_elapsed + 'h' : '--'} elapsed</span> &bull; 
+                <span style="color:${c.sla_tracking.hours_remaining < 24 ? '#fb7185' : '#34d399'}; font-weight:700;">${c.sla_tracking.hours_remaining !== undefined ? c.sla_tracking.hours_remaining + 'h' : '--'} remaining</span>
+              ` : 'N/A'}
+            </span>
           </div>
           <div class="detail-item">
             <label>Triage Routing</label>
