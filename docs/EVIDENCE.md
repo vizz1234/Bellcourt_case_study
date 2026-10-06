@@ -11,7 +11,7 @@
 
 | Evaluation Metric | Baseline Human Operations | Bellcourt PA Engine | Delta / Improvement |
 | :--- | :--- | :--- | :--- |
-| **Policy Version / Rulebook Accuracy (120 QA Cases)** | 43.3% (52/120) | **100.0% (120/120)** | **+56.7%** (Zero superseded policies) |
+| **Policy Version / Rulebook Accuracy (120 QA Cases)** | 56.7% (68/120 correct) | **99.2% (119/120)** | **+42.5%** (Zero superseded policies) |
 | **Appeal Overturn Risk (Wrong Rulebook Denials)** | 85.7% (18/21 overturned) | **0.0%** (Governing authority locked) | **-85.7%** Overturns avoided |
 | **Clinical Review Time per Case** | 38.0 min (14.2 min in SharePoint) | **< 10 seconds** | **95.6% time saved** (~35 min/case) |
 | **Incomplete Intake Detection** | ~5.0 days lag (66/67 late cases) | **Instant (< 3 sec)** | **Day 0 deficiency fax-back** |
@@ -29,7 +29,7 @@ We benchmarked the **Deterministic 4-Tier Policy Authority Resolver (`GOV-01`)**
 
 | Measure | Baseline Staff Operations | PA Engine Result | Validation Status |
 | :--- | :--- | :--- | :--- |
-| **Exact Governing Document & Section Identified** | 52 / 120 (43.3%) | **120 / 120 (100.0%)** | ✅ PERFECT |
+| **Exact Governing Document & Section Identified** | 68 / 120 (56.7%) | **119 / 120 (99.2%)** | ✅ 99.2% MATCH |
 | **Superseded Policy Versions (v1 vs. v2) Resolved** | 14 errors committed | **14 / 14 (100.0%) resolved** | ✅ PERFECT |
 | **Unapproved Staff Memos (`UM-MEMO-2025-19`, etc.) Neutralized** | 18 errors committed | **18 / 18 (100.0%) blocked** | ✅ PERFECT |
 | **Employer Plan Exclusions (`SPD-HARLAN`, `SPD-BRIGHT`) Caught** | 7 errors committed | **7 / 7 (100.0%) enforced** | ✅ PERFECT |

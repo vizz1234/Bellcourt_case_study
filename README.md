@@ -92,7 +92,7 @@ Benchmarked against all **120 historical QA audit cases** (`qa_audit_sample_2026
 
 | Evaluation Metric | Legacy Human Baseline | Agentic Clinical Copilot | Impact / Gain |
 | :--- | :---: | :---: | :---: |
-| **Governing Policy Citation Accuracy** | 43.3% (52 / 120) | **99.2% (119 / 120)** | **+55.9% Improvement** |
+| **Governing Policy Citation Accuracy** | 56.7% (68 / 120) | **99.2% (119 / 120)** | **+42.5% Improvement** |
 | **Clinical Determination Accuracy** | 56.7% (68 / 120) | **90.8% (109 / 120)** | **+34.1% Improvement** |
 | **Resolution of `MEMO_CONFLICT` (n=18)** | 0.0% (All Failed) | **100.0% Resolved** | Eliminates UM-MEMO-2025-19 errors |
 | **Resolution of `CLIENT_RULE_MISSED` (n=7)** | 0.0% (All Failed) | **100.0% Resolved** | Enforces employer visit limits & exclusions |
