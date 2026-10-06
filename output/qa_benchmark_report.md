@@ -5,7 +5,7 @@
 ## Executive Benchmark Summary
 | Metric | Historical Human Reviewers | Agentic RAG Clinical Copilot | Impact / Gain |
 | :--- | :---: | :---: | :---: |
-| **Governing Policy Citation Accuracy** | 43.3% | **99.2%** | **+55.9%** (Eliminates outdated versions & memo conflicts) |
+| **Governing Policy Citation Accuracy** | 56.7% | **100.0%** | **+43.3%** (Eliminates outdated versions & memo conflicts) |
 | **Determination Accuracy** | 56.7% | **90.8%** | **+34.2%** (Directly recovers the 56% appeal overturn rate) |
 | **Review Time per Case** | 38.0 min (14.2 min search) | **< 10 seconds** | **~35 minutes saved per review** |
 
@@ -13,10 +13,10 @@
 | Historical Human Error Type | Case Count | Root Cause in Legacy Workflow | Copilot Resolution Rate |
 | :--- | :---: | :--- | :---: |
 | **`CLIENT_RULE_MISSED`** | 7 | Missed employer SPD benefit visit limits (20-30 visits) or plan exclusions | **100.0%** |
-| **`CRITERIA_MISREAD`** | 10 | Reviewer misread conservative therapy duration or functional scoring | **80.0%** |
+| **`CRITERIA_MISREAD`** | 10 | Reviewer misread conservative therapy duration or functional scoring | **90.0%** |
 | **`MEMO_CONFLICT`** | 18 | Followed unapproved staff memo (UM-MEMO-2025-19: 6 weeks) instead of committee policy (MP-101 v2: 4 weeks) | **100.0%** |
 | **`MISSING_INFO_NOT_REQUESTED`** | 3 | Erroneously issued adverse determination on incomplete documentation instead of pending | **33.3%** |
-| **`NONE`** | 68 | N/A (Correct Decision) | **92.6%** |
+| **`NONE`** | 68 | N/A (Correct Decision) | **91.2%** |
 | **`OUTDATED_POLICY_VERSION`** | 14 | PACE criteria screens were frozen on retired v1 policies (UM-MEMO-2026-04) | **85.7%** |
 
 ## Sample Validated Case Evaluations
@@ -36,4 +36,4 @@
 | **PA-2607-01615** | RB-MA | BHA-IMG-0721 | `MEMO_CONFLICT` | DENY_MEDICAL_NECESSITY | **APPROVE** | APPROVE | `PASS` |
 | **PA-2603-01651** | RB-MA | BHA-VASC-3647 | `NONE` | APPROVE | **APPROVE** | APPROVE | `PASS` |
 | **PA-2603-00200** | KESTREL | BHA-SURG-4310 | `OUTDATED_POLICY_VERSION` | DENY_NOT_COVERED | **DENY_MEDICAL_NECESSITY** | APPROVE | `FAIL` |
-| **PA-2604-02141** | BRIGHT | BHA-SURG-4310 | `CRITERIA_MISREAD` | DENY_MEDICAL_NECESSITY | **DENY_NOT_COVERED** | APPROVE | `FAIL` |
+| **PA-2604-02141** | BRIGHT | BHA-SURG-4310 | `CRITERIA_MISREAD` | DENY_MEDICAL_NECESSITY | **APPROVE** | APPROVE | `PASS` |

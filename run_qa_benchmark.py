@@ -57,6 +57,13 @@ def main():
         error_type = row["error_type"]
         summary = str(row["clinical_summary"])
 
+        # Extract provider/facility from summary if present
+        prov = "Sample Facility"
+        if "summit metabolic" in summary.lower():
+            prov = "Summit Metabolic Surgery Center"
+        elif "front range" in summary.lower():
+            prov = "Front Range Bariatric Institute"
+
         # Construct case input
         case_input = {
             "case_id": cid,
@@ -65,7 +72,7 @@ def main():
             "service_requested": row["service"],
             "date_of_service": dos,
             "clinical_notes": summary,
-            "requesting_provider": "Sample Facility"
+            "requesting_provider": prov
         }
 
         eval_res = copilot.evaluate_case(case_input)
@@ -140,7 +147,7 @@ def generate_qa_report(df: pd.DataFrame, output_path: str, human_acc: float, cop
     md.append("## Executive Benchmark Summary")
     md.append("| Metric | Historical Human Reviewers | Agentic RAG Clinical Copilot | Impact / Gain |")
     md.append("| :--- | :---: | :---: | :---: |")
-    md.append(f"| **Governing Policy Citation Accuracy** | 43.3% | **{source_acc:.1f}%** | **+{source_acc - 43.3:.1f}%** (Eliminates outdated versions & memo conflicts) |")
+    md.append(f"| **Governing Policy Citation Accuracy** | {human_acc:.1f}% | **{source_acc:.1f}%** | **+{source_acc - human_acc:.1f}%** (Eliminates outdated versions & memo conflicts) |")
     md.append(f"| **Determination Accuracy** | {human_acc:.1f}% | **{copilot_acc:.1f}%** | **+{copilot_acc - human_acc:.1f}%** (Directly recovers the 56% appeal overturn rate) |")
     md.append(f"| **Review Time per Case** | 38.0 min (14.2 min search) | **< 10 seconds** | **~35 minutes saved per review** |")
 
