@@ -390,6 +390,7 @@ class IntakeTriageEngine:
             "case_id": case_id,
             "channel": channel,
             "received_ts": received_ts,
+            "urgency": urgency,
             "client_id": resolved_client_id,
             "patient_name": merged_data.get("patient_name"),
             "patient_dob": merged_data.get("patient_dob"),

@@ -66,7 +66,8 @@
         "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8101",
@@ -140,7 +141,8 @@
         "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8102",
@@ -209,7 +211,8 @@
         "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8103",
@@ -293,7 +296,8 @@
         "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8104",
@@ -372,7 +376,8 @@
         "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8105",
@@ -446,7 +451,8 @@
         "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8106",
@@ -526,7 +532,8 @@
         "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8107",
@@ -600,7 +607,8 @@
         "ARIZONA_LICENSED_MD_REQUIRED: Denial must be personally reviewed and signed by an Arizona-licensed medical director (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "URGENT"
   },
   {
     "case_id": "PA-2609-8108",
@@ -677,7 +685,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8109",
@@ -749,7 +758,8 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8110",
@@ -821,7 +831,8 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8111",
@@ -888,7 +899,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8112",
@@ -955,7 +967,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8113",
@@ -1006,7 +1019,8 @@
       "criteria_checklist": [],
       "clinical_rationale": "Case halted at intake triage due to PENDED_INCOMPLETE_INFO.",
       "required_role": "INTAKE_COORDINATOR"
-    }
+    },
+    "urgency": "URGENT"
   },
   {
     "case_id": "PA-2609-8114",
@@ -1073,7 +1087,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8115",
@@ -1140,7 +1155,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8116",
@@ -1217,7 +1233,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8117",
@@ -1289,7 +1306,8 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8118",
@@ -1361,7 +1379,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8119",
@@ -1433,7 +1452,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8120",
@@ -1510,7 +1530,8 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8121",
@@ -1587,7 +1608,8 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8122",
@@ -1669,7 +1691,8 @@
       "required_role": "PHYSICIAN_REVIEWER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8123",
@@ -1720,7 +1743,8 @@
       "criteria_checklist": [],
       "clinical_rationale": "Case halted at intake triage due to PENDED_INCOMPLETE_INFO.",
       "required_role": "INTAKE_COORDINATOR"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8124",
@@ -1789,7 +1813,8 @@
         "TEXAS_AI_DISCLOSURE: Notice must disclose the use of automated/AI-assisted tools (RIVERBEND-ADDENDUM \u00a74)."
       ],
       "texas_ai_disclosure": "Texas AI-Assisted Prior Authorization Disclosure Required"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8125",
@@ -1840,7 +1865,8 @@
       "criteria_checklist": [],
       "clinical_rationale": "Case halted at intake triage due to PENDED_INCOMPLETE_INFO.",
       "required_role": "INTAKE_COORDINATOR"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8126",
@@ -1912,7 +1938,8 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8127",
@@ -1969,7 +1996,8 @@
       "criteria_checklist": [],
       "clinical_rationale": "Case halted at intake triage due to REJECTED_COVERAGE_TERMINATED.",
       "required_role": "INTAKE_COORDINATOR"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8128",
@@ -2020,7 +2048,8 @@
       "criteria_checklist": [],
       "clinical_rationale": "Case halted at intake triage due to PENDED_INCOMPLETE_INFO.",
       "required_role": "INTAKE_COORDINATOR"
-    }
+    },
+    "urgency": "STANDARD"
   },
   {
     "case_id": "PA-2609-8129",
@@ -2092,6 +2121,7 @@
       "required_role": "NURSE_APPROVER",
       "state_licensing_flags": [],
       "texas_ai_disclosure": null
-    }
+    },
+    "urgency": "STANDARD"
   }
 ]
