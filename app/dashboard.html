@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bellcourt UM Operations - Option A: Intelligent Intake & Triage Engine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <style>
     :root {
       --bg-dark: #0a0e17;
@@ -34,7 +37,7 @@
 
     body {
       background: var(--bg-dark);
-      background-image: 
+      background-image:
         radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
         radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.12) 0px, transparent 50%),
         radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.08) 0px, transparent 50%);
@@ -131,9 +134,20 @@
     }
 
     @keyframes pulseAnim {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-      70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
     }
 
     main {
@@ -363,10 +377,29 @@
       letter-spacing: 0.02em;
     }
 
-    .channel-FAX { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
-    .channel-PORTAL { background: rgba(6, 182, 212, 0.15); color: #22d3ee; border: 1px solid rgba(6, 182, 212, 0.3); }
-    .channel-PHONE { background: rgba(245, 158, 11, 0.15); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.3); }
-    .channel-ELECTRONIC { background: rgba(16, 185, 129, 0.15); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .channel-FAX {
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .channel-PORTAL {
+      background: rgba(6, 182, 212, 0.15);
+      color: #22d3ee;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+
+    .channel-PHONE {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .channel-ELECTRONIC {
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
 
     .sla-timer {
       font-family: 'JetBrains Mono', monospace;
@@ -380,8 +413,15 @@
     }
 
     @keyframes blinkText {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.6;
+      }
     }
 
     /* Modal / Drawer */
@@ -416,8 +456,15 @@
     }
 
     @keyframes modalSlide {
-      from { transform: translateY(20px) scale(0.98); opacity: 0; }
-      to { transform: translateY(0) scale(1); opacity: 1; }
+      from {
+        transform: translateY(20px) scale(0.98);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
     }
 
     .modal-header {
@@ -543,16 +590,19 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <div class="brand">
       <div class="brand-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        </svg>
       </div>
       <div class="brand-text">
         <h1>Bellcourt Health Administrators</h1>
-        <p>Prior Authorization Intake & Triage Engine (Option A)</p>
+        <p>Prior Authorization Intake & Triage Engine</p>
       </div>
     </div>
     <div class="header-badges">
@@ -571,7 +621,10 @@
       <div class="kpi-card" style="--card-accent: var(--accent-blue)">
         <div class="kpi-label">
           <span>TOTAL QUEUE INGESTED</span>
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
         </div>
         <div class="kpi-value" id="kpi-total">30</div>
         <div class="kpi-sub">13 Faxes &bull; 11 Portal &bull; 3 Phone &bull; 3 Electronic</div>
@@ -580,7 +633,10 @@
       <div class="kpi-card" style="--card-accent: var(--accent-emerald)">
         <div class="kpi-label">
           <span>CLEAN & READY FOR REVIEW</span>
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
         </div>
         <div class="kpi-value" style="color: #34d399;" id="kpi-ready">23</div>
         <div class="kpi-sub">76.7% Auto-Validated & Routed to PACE</div>
@@ -589,7 +645,10 @@
       <div class="kpi-card" style="--card-accent: var(--accent-amber)">
         <div class="kpi-label">
           <span>DEFICIENCIES CAUGHT AT INTAKE</span>
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
         </div>
         <div class="kpi-value" style="color: #fbbf24;" id="kpi-pended">5</div>
         <div class="kpi-sub">4 Missing IDs &bull; 1 Terminated Coverage</div>
@@ -598,7 +657,10 @@
       <div class="kpi-card" style="--card-accent: var(--accent-purple)">
         <div class="kpi-label">
           <span>ADVERSARIAL ATTACKS DEFUSED</span>
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
         </div>
         <div class="kpi-value" style="color: #c084fc;" id="kpi-security">2</div>
         <div class="kpi-sub">Prompt Injections Neutralized</div>
@@ -608,14 +670,20 @@
     <!-- Filters & Search -->
     <div class="controls-bar">
       <div class="filter-tabs">
-        <button class="tab-btn active" onclick="setFilter('ALL')">All Requests <span class="tab-count" id="count-all">30</span></button>
-        <button class="tab-btn" onclick="setFilter('READY')">Ready for Review <span class="tab-count" id="count-ready">23</span></button>
-        <button class="tab-btn" onclick="setFilter('PENDED')">Incomplete / Pended <span class="tab-count" id="count-pended">4</span></button>
-        <button class="tab-btn" onclick="setFilter('FLAGGED')">Security Flagged <span class="tab-count" id="count-flagged">2</span></button>
-        <button class="tab-btn" onclick="setFilter('REJECTED')">Terminated <span class="tab-count" id="count-rejected">1</span></button>
+        <button class="tab-btn active" onclick="setFilter('ALL')">All Requests <span class="tab-count"
+            id="count-all">30</span></button>
+        <button class="tab-btn" onclick="setFilter('READY')">Ready for Review <span class="tab-count"
+            id="count-ready">23</span></button>
+        <button class="tab-btn" onclick="setFilter('PENDED')">Incomplete / Pended <span class="tab-count"
+            id="count-pended">4</span></button>
+        <button class="tab-btn" onclick="setFilter('FLAGGED')">Security Flagged <span class="tab-count"
+            id="count-flagged">2</span></button>
+        <button class="tab-btn" onclick="setFilter('REJECTED')">Terminated <span class="tab-count"
+            id="count-rejected">1</span></button>
       </div>
 
-      <input type="text" class="search-input" id="search" placeholder="Search Case ID, Patient, Provider, Code..." oninput="handleSearch()">
+      <input type="text" class="search-input" id="search" placeholder="Search Case ID, Patient, Provider, Code..."
+        oninput="handleSearch()">
     </div>
 
     <!-- Table -->
@@ -631,8 +699,11 @@
             <th>Member ID</th>
             <th>Service Requested</th>
             <th>Triage Status</th>
-            <th onclick="toggleSlaSort()" style="cursor: pointer; user-select: none; white-space: nowrap;" title="Click to sort by statutory SLA deadline (Earliest vs. Latest)">
-              SLA Deadline &nbsp;<span id="sort-arrow" style="display:inline-flex; align-items:center; gap:3px; font-size:11px; font-weight:600; color:#38bdf8; background:rgba(56,189,248,0.15); padding:2px 7px; border-radius:4px; border:1px solid rgba(56,189,248,0.3); transition:all 0.15s ease;">▲ Earliest</span>
+            <th onclick="toggleSlaSort()" style="cursor: pointer; user-select: none; white-space: nowrap;"
+              title="Click to sort by statutory SLA deadline (Earliest vs. Latest)">
+              SLA Deadline &nbsp;<span id="sort-arrow"
+                style="display:inline-flex; align-items:center; gap:3px; font-size:11px; font-weight:600; color:#38bdf8; background:rgba(56,189,248,0.15); padding:2px 7px; border-radius:4px; border:1px solid rgba(56,189,248,0.3); transition:all 0.15s ease;">▲
+                Earliest</span>
             </th>
           </tr>
         </thead>
@@ -734,11 +805,11 @@
 
       if (slaSortOrder) {
         filtered.sort((a, b) => {
-          const tsA = (a.sla_tracking && a.sla_tracking.deadline_ts) 
-            ? new Date(a.sla_tracking.deadline_ts.replace(' ', 'T')).getTime() 
+          const tsA = (a.sla_tracking && a.sla_tracking.deadline_ts)
+            ? new Date(a.sla_tracking.deadline_ts.replace(' ', 'T')).getTime()
             : Infinity;
-          const tsB = (b.sla_tracking && b.sla_tracking.deadline_ts) 
-            ? new Date(b.sla_tracking.deadline_ts.replace(' ', 'T')).getTime() 
+          const tsB = (b.sla_tracking && b.sla_tracking.deadline_ts)
+            ? new Date(b.sla_tracking.deadline_ts.replace(' ', 'T')).getTime()
             : Infinity;
           return slaSortOrder === 'ASC' ? tsA - tsB : tsB - tsA;
         });
@@ -762,8 +833,8 @@
         }
 
         const isUrgent = c.sla_tracking && c.sla_tracking.urgency === 'URGENT';
-        const urgencyHtml = isUrgent 
-          ? `<span class="sla-urgent" style="font-weight:700;">URGENT (72h)</span>` 
+        const urgencyHtml = isUrgent
+          ? `<span class="sla-urgent" style="font-weight:700;">URGENT (72h)</span>`
           : `<span style="color:var(--text-muted);">Standard</span>`;
 
         tr.innerHTML = `
@@ -920,10 +991,9 @@
                 <span style="font-size: 11px; font-weight: 700; color: #60a5fa; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">Agentic RAG Clinical Copilot</span>
                 <h3 style="font-size: 16px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px;">
                   Clinical Recommendation: 
-                  <span class="status-badge ${
-                    c.clinical_copilot_evaluation.recommendation === 'APPROVE' ? 'status-READY' : 
-                    c.clinical_copilot_evaluation.recommendation === 'PEND_FOR_INFO' ? 'status-PENDED' : 'status-REJECTED'
-                  }" style="font-size: 13px;">${c.clinical_copilot_evaluation.recommendation}</span>
+                  <span class="status-badge ${c.clinical_copilot_evaluation.recommendation === 'APPROVE' ? 'status-READY' :
+            c.clinical_copilot_evaluation.recommendation === 'PEND_FOR_INFO' ? 'status-PENDED' : 'status-REJECTED'
+          }" style="font-size: 13px;">${c.clinical_copilot_evaluation.recommendation}</span>
                 </h3>
               </div>
               <div style="display: flex; gap: 8px;">
@@ -955,8 +1025,8 @@
             <div>
               <span style="font-size: 11px; font-weight: 600; color: var(--text-dim); text-transform: uppercase; display: block; margin-bottom: 6px;">Objective Criteria Verification Checklist:</span>
               <div style="display: flex; flex-direction: column; gap: 8px;">
-                ${c.clinical_copilot_evaluation.criteria_checklist && c.clinical_copilot_evaluation.criteria_checklist.length > 0 ? 
-                  c.clinical_copilot_evaluation.criteria_checklist.map(item => `
+                ${c.clinical_copilot_evaluation.criteria_checklist && c.clinical_copilot_evaluation.criteria_checklist.length > 0 ?
+            c.clinical_copilot_evaluation.criteria_checklist.map(item => `
                     <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 10px 12px;">
                       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                         <strong style="font-size: 12px; color: #e2e8f0;">${item.criterion}</strong>
@@ -965,7 +1035,7 @@
                       <p style="font-size: 11px; color: var(--text-muted); font-style: italic;">Evidence: "${item.clinical_evidence}"</p>
                     </div>
                   `).join('') : '<p style="font-size: 12px; color: var(--text-dim)">Plan exclusion verified; criteria checklist bypassed.</p>'
-                }
+          }
               </div>
             </div>
 
@@ -1007,4 +1077,5 @@
     loadData();
   </script>
 </body>
+
 </html>
